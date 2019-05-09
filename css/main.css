@@ -5,14 +5,12 @@ body {
 }
     
 h1, h2, h3, h4 {
-    font-family:
-    'Quattrocento', 'Arial Narrow', Arial,
-    sans-serif;
+    font-family:'Merriweather', serif;
     margin: .25rem;
 }
 
 h1 {
-    color: black;
+    color: white;
 }
 
 h2 {
