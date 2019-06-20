@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> CIT 160 - Assignment - Brienna Stewart </title>
+        <meta name="description" content="This page serves as an assignment for CIT 160.">
+        <link rel="stylesheet" href="weeklycss/program.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Week 9: Times Tables</h1>
+            <h2>Brienna Stewart</h2>
+        </header>
+        <main>
+            <h3>Choose your number</h3>
+            <select id="integer">
+                <option value=""disabled selected>--Please choose a number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label><button onclick="timesTable()">Get Times Table</button></label>
+            <hr>
+            <p><span id="output"></span></p>
+        </main>
+        <footer>
+            &copy;2019 &bull; Brienna Stewart &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+        </footer>
+
+        <script
+        src="weeklyjs/timesTable.js">
+        </script>
+    </body>
+</html>
