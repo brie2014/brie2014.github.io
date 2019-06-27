@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> CIT 160 - Assignment - Brienna Stewart </title>
+        <meta name="description" content="This page serves as an assignment for CIT 160.">
+        <link rel="stylesheet" href="weeklycss/program.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Week 10: Wind Chill Factor</h1>
+            <h2>Brienna Stewart</h2>
+        </header>
+        <main>
+            <h3>How Cold does it Feel?</h3>
+                <label>Temperature (&deg;F): <input type="text" id="temp"></label>
+            <label>Wind Speed (mph): <input type="text" id="speed"> </label>
+            <label><button onclick="doInputOutput()">Find Wind Chill</button></label>
+            <hr>
+            <p><span id="output"></span></p>
+        </main>
+        <footer>
+            &copy;2019 &bull; Brienna Stewart &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+        </footer>
+
+        <script
+        src="weeklyjs/windchill.js">
+        </script>
+    </body>
+</html>
