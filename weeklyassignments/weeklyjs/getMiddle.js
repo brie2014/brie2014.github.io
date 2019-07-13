@@ -16,7 +16,7 @@ return middle number
 
 //Test array and on-click function
 function doIt () {
-let numbers = [-1.2, 2.3, 3.4, 4.5], 5.6;
+let numbers = [-1.2, 2.3, 3.4, 4.5, 5.6];
 document.getElementById("array").innerHTML = numbers.toString();
 document.getElementById("output").innerHTML = getMiddle(numbers);
 }
