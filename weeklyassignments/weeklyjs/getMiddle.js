@@ -16,7 +16,7 @@ return middle number
 
 //Test array and on-click function
 function doIt () {
-let numbers = [-1.2, 2.3, 3.4, 4.5, 5.6];
+let numbers = [-1.2, 2.3, 3.4, 4.5];
 document.getElementById("array").innerHTML = numbers.toString();
 document.getElementById("output").innerHTML = getMiddle(numbers);
 }
@@ -30,6 +30,6 @@ function getMiddle(list) {
 		let upper = list[list.length >>> 1];
 		let lower = list[(list.length >>> 1)-1]; ;
 		let mid = (upper + lower)/2;
-		return mid ; 
+		return mid.toFixed(2) ; 
 	}
 }

@@ -23,5 +23,5 @@ document.getElementById("output").innerHTML = addEnds(numbers);
 //Returns sum of first and last
 function addEnds(list) {
   let sum = list[0] + list[list.length-1]; 
-	return sum;
+	return sum.toFixed(2);
 }
