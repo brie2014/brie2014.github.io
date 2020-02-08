@@ -79,7 +79,8 @@ nav{
     font-size: 1.2rem
 }
 nav > ul{
-    list-style-type: none;display: flex
+    list-style-type: none;
+    display: flex
 }
 nav a{
     padding:1em;min-width: 70px
