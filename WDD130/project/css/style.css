@@ -4,22 +4,29 @@
         --secondary-color: #98c1d9;
         --accent1-color: #e0fbfc;
         --accent2-color: #ee6c4d;
-        --heading-font: 'Lora', serif;
-        --paragraph-font: 'Merriweather', serif;
+        --heading-font: 'Lora','Times New Roman', serif;
+        --paragraph-font: 'Merriweather', 'Arial', serif;
     }
 
 body {
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
     font-size: 16px;
+    padding: 5px;
+    margin: 5px 10px;
 
 }
 
-header, nav, main, footer {
+header, nav, main, footer, .motto {
     max-width: 960px;
     margin: 0 auto;
     align-content: center;
 
+}
+.motto {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    font-size: 1rem;
 }
 
 header {
@@ -27,18 +34,35 @@ header {
     color: var(--accent1-color);
     font-family: var(--heading-font);
     border: 3px solid white;
-    padding: 10px;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
 }
 
 header img {
-    width: 50px;
+    width: 100px;
     height: auto;
+    padding: 5px 10px;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.heading h1 {
+	margin: 0;
+}
+
+h2 {
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+}
 section img {
     width: 300px;
     height: auto;
@@ -52,7 +76,7 @@ nav{
     background-color: var(--accent1-color);
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.2rem
 }
 nav > ul{
     list-style-type: none;display: flex
