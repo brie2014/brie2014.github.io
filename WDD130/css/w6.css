@@ -43,6 +43,7 @@ body {
    /* Activity 2 styles */
    .content2 {
     position: relative;
+    height: 300px;
   }
   
   .red2 {
@@ -50,7 +51,7 @@ body {
     height: 100px;
     background-color: red;
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 100px;
   }
   
@@ -90,28 +91,28 @@ body {
   
   .red3 {
     width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: red;
     grid-column: 1/3;
   }
   
   .green3 {
-    width: 250px;
-    height: 200px;
+    width: 275px;
+    height: 150px;
     background-color: green;
     justify-self: start;
   }
   
   .gold3 {
-    width: 250px;
-    height: 200px;
+    width: 275px;
+    height: 150px;
     background-color: gold;
     justify-self: end;
   }
   
   .blue3 {
     width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: blue;
     grid-column: 1/3;
   }
