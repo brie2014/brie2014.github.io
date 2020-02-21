@@ -53,6 +53,7 @@ h2 {
     border-bottom: solid black 5px;
     font-size: 2rem;
     padding: 0.5rem;
+    background-color: rgba(227, 249, 252, 0.5);
 }
 
 nav{
@@ -112,7 +113,7 @@ nav a:hover{
     width: 100%;
     height: auto;
     padding: 10px; 
-    justify-self: end;
+    text-align: right;
 }
 
 .home-headline-2 {
@@ -133,8 +134,13 @@ nav a:hover{
     padding: 10px; 
 }
 
+.home-paragraph-3 h2 {
+    text-align: center;
+}
+
 .home-paragraph-3 {
     grid-column: 1/6;
+    margin: 100px; 
 }
 
 
