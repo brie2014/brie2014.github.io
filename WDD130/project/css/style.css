@@ -11,9 +11,7 @@
 body {
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
-    font-size: 16px;
-    padding: 5px;
-    margin: 5px 10px;
+    font-size: 18px;
 
 }
 
@@ -78,6 +76,13 @@ nav a:hover{
     background-color: rgb(248, 248, 250)
 }
 
+.home-grid img {
+    background-color: rgb(236, 235, 235);
+    border: 1px solid #ccc;
+    padding: 10px; 
+    box-shadow: 8px 8px 8px #999;
+}
+
 .banner-box img { 
     width:100%; 
     height: auto;
@@ -86,8 +91,9 @@ nav a:hover{
 
  .home-grid {
      display: grid;
-     grid-gap: 20px;
+     grid-gap: 10px;
      padding-top: 20px;
+     align-items: start;
 }
 
 .home-headline-1 {
@@ -105,9 +111,8 @@ nav a:hover{
     grid-row: 1/4;
     width: 100%;
     height: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #999;
+    padding: 10px; 
+    justify-self: end;
 }
 
 .home-headline-2 {
@@ -125,25 +130,31 @@ nav a:hover{
     grid-row: 4/7;
     width: 100%;
     height: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #999;
+    padding: 10px; 
 }
 
 .home-paragraph-3 {
     grid-column: 1/6;
 }
 
+
 .social {
+font-family: var(--heading-font);
+font-size: 1.2rem;
+display: grid;
+grid-template-columns: auto auto;
+padding: 10px;
 color: var(--accent2-color);
-height: 100px;
+height: auto;
 border-top: solid black 5px;
 text-align: left;
 background-color: var(--accent1-color);
 }
 
-.social img {
-    float: right;
+.social-media-icons {
+    grid-column: 2/3;
+    justify-self: end;
+    padding: 10px; 
 }
 
 .action {
