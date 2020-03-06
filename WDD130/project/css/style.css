@@ -277,13 +277,6 @@ background-color: rgba(230, 230, 230, 0.4)
     text-align: center;
 }
 
-.rd-banner {
-    text-align: center;
-    width: 100%; 
-    height: auto;
-    padding: 5px;
-}
-
 .rd-grid, p {
     font-size: 1.2em;
 }
