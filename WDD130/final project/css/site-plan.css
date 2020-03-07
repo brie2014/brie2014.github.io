@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather&display=swap');
+    :root{
+        --primary-color: #F4F0BB;
+        --secondary-color: #226F54;
+        --accent1-color: #DA2C38;
+        --accent2-color: #87C38F;
+        --accent3-color:#43291F;
+        --heading-font: 'Lora', serif;
+        --paragraph-font: 'Merriweather', serif;
+    }
+    html{
+        background-color: var(--primary-color)
+    }
+    body{
+        max-width: 900px;margin: 0 auto;
+        background-color: white;
+        padding: 1em}
+    img{
+        max-width: 100%
+    }
+    h2, h3, h4, h5, 
+    h6{
+        font-family: var(--heading-font);
+        color: rgb(11, 11, 124)
+}
+    header{
+        padding: 1em;
+        text-align: center;
+        color: var(--accent2-color);
+        background-color: var(--secondary-color)
+    }
+    header > h1 {
+        color: var(--primary-color);
+    }
+    p{
+        font-family: var(--paragraph-font);
+        color:rgb(2, 2, 31);
+        padding: 1em;
+    } 
+    .colors{
+        width: 100%;
+        min-width: 350px;
+        margin: auto;
+        text-align: center
+    }      
+    .colors th{
+        background-color: #999
+    }
+    .colors td{
+        width: 20%;
+        height: 3em
+    }
+    .primary{
+        background-color: var(--primary-color)
+    }
+    .secondary{
+        background-color: var(--secondary-color)
+    }
+    .accent1{
+        background-color: var(--accent1-color)
+    }
+    .accent2{
+        background-color: var(--accent2-color)
+    }
+    .accent3{
+        background-color: var(--accent3-color)
+    }
+
+    .colored {
+        color: var(--accent1-color);
+    }
