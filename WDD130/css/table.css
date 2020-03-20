@@ -11,13 +11,13 @@ table {
   
 }
 
-thead th {
+.heading {
     background-color: black;
     color: yellow;
     font-size: 1.2rem;
 }
 
-tbody th {
+.sub-heading {
     background-color: black;
     color: white;
 }
