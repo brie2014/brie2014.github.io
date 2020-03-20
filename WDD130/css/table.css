@@ -24,14 +24,14 @@ table {
 
 th {
     border: 1px solid rgb(196, 194, 194);
-    padding: 9px 5px;
+    padding: 9px 7px;
     text-align: center;
 }
 
 td {
     border: 1px solid rgb(196, 194, 194);
     width: 55%;
-    padding: 9px 5px;
+    padding: 9px 7px;
     text-align: left;
 }
 
