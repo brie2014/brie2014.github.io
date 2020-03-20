@@ -1,0 +1,40 @@
+body {
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 30px rgb(37, 37, 37);
+  align-content: center;
+  margin: 0 auto;
+  
+}
+
+thead th {
+    background-color: black;
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+tbody th {
+    background-color: black;
+    color: white;
+}
+
+th {
+    border: 1px solid rgb(196, 194, 194);
+    padding: 8px 5px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid rgb(196, 194, 194);
+    width: 55%;
+    padding: 8px 5px;
+    text-align: left;
+}
+
+tr:nth-of-type(4) {
+    background-color:  rgb(209, 207, 207);
+}
