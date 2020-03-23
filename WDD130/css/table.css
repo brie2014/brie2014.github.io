@@ -35,6 +35,6 @@ td {
     text-align: left;
 }
 
-tr:nth-of-type(4) {
+tr:nth-of-type(3) {
     background-color:  rgb(209, 207, 207);
 }
