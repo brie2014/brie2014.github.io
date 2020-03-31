@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather&display=swap');
+    :root{
+        --primary-color: #F4F0BB;
+        --secondary-color: #226F54;
+        --accent1-color: #DA2C38;
+        --accent2-color: #FFFFFF;
+        --accent3-color: #0B0B7C;
+        --heading-font: 'Lora', serif;
+        --paragraph-font: 'Merriweather', serif;
+    }
+
+    html{
+        background-color: var(--primary-color)
+    }
+
+    header, nav, main, footer, .motto {
+        max-width: 960px;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    body{
+        max-width: 900px;margin: 0 auto;
+        background-color: var(--accent2-color);
+        padding: 1em;
+        font-family: var(--paragraph-font);
+        font-size: 18px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    h2, h3, h4, h5, 
+    h6{
+        font-family: var(--heading-font);
+        color: var(--accent3-color);
+    }
+    
+    p{
+        font-family: var(--paragraph-font);
+        color:var(--accent3-color);
+        padding: 1em 1em 0em;
+        margin: 10px auto 0px;
+    }
+    
+    header {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        font-family: var(--heading-font);
+        padding: 5px 0;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .logo {
+        width: 100px;
+        height: auto;
+        margin: 10px;
+        background-color: var(--accent2-color);
+        border-radius: 3px;
+    }
+
+    .motto {
+        font-family: var(--paragraph-font);
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--accent2-color);
+    }
+    
+    header h1 {
+        font-size: 3rem;
+        margin: 15px 0px 0px; 
+    }
+    
+    h2 {
+        font-size: 2rem;
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: var(--accent1-color);
+        
+      }
+      
+      .navbar a {
+        float: left;
+        color: var(--accent2-color);
+        text-align: center;
+        padding: 14px 16px;
+      }
+    
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: var(--accent2-color);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0; 
+        text-decoration: underline;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: var(--accent3-color);
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--accent2-color);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: var(--accent3-color);
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: var(--primary-color);
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      footer {
+        font-family: var(--heading-font);
+        font-size: 1.2rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        color: var(--accent2-color);
+        height: auto;
+        text-align: left;
+        background-color: var(--accent1-color);
+      }
+
+      footer a {
+          color: var(--accent2-color);
+          text-align: right;
+      }
+
+      .welcome {
+          text-align: center;
+          font-style: italic;
+          font-family: var(--paragraph-font);
+          color:var(--accent3-color);
+          padding: 1em 1em 0em;
+          margin: 10px auto 0px;
+      }
+
+      .home-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-right: 20px;
+        grid-gap: 20px; 
+        padding: 20px;
+      }
+
+      .home-grid h2 {
+        border: solid 1px var(--accent3-color);
+        
+      }
+
+      .home-grid img {
+        border: solid 1px var(--accent3-color);
+        border-top: none;
+      }
+
+      form {
+        margin: 20px auto;
+        width: 600px;
+        padding: 1em;
+        border: 1px solid var(--accent1-color);
+        border-radius: 1em;
+        background-color: var(--primary-color);
+    }
+
+    form ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    form li+li {
+        margin-top: 1em;
+    }
+
+    form label {
+        display: inline-block;
+        width: 25%;
+        text-align: left;
+        color: var(--accent3-color);
+        padding-bottom: 5px;
+    }
+
+    form 
+    textarea {
+        font: 1em sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        resize: none;
+        padding: 5px;
+    }
+
+    form input {
+        font: 1em sans-serif;
+        display: inline-block;
+        width: auto;
+        justify-items: right;
+        width: 416px;
+        padding: 5px;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #000;
+    }
+
+    textarea {
+        vertical-align: top;
+        height: 5em;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    button {
+        background-color: var(--secondary-color);
+        color: var(--accent2-color);
+        padding: 10px;
+        font-size: 16px;
+        font-family: var(--paragraph-font);
+    }
+
+
+    #feedback {
+        color: var(--accent1-color);
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        display: none;
+        padding: 20px;
+    }
+
+    form h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+   /*Homepage wireframe https://wireframe.cc/niwBCw
+   Recipe List wireframe https://wireframe.cc/osfSjb
+   Recipe Template wireframe 
+   Suggest a Recipe wireframe https://wireframe.cc/B3y4aV
+   
+   */

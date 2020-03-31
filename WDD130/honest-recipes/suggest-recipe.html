@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest Recipes-Home Page</title>
+    <meta name="description" content="Everyone loves a good home-cooked meal. With this website, these meals will be easy to come
+    by. A delicious dinner is just one click away.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <header>
+            <picture><img class=logo src="images/honest-recipes-logo.png" alt="Logo"> </picture>
+            <section class="heading">
+                <h1>Honest Recipes</h1>
+                <div class="motto">Hungry? Get cooking quick!</div>
+            </section>
+        </header>
+    </header>
+    <main>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Recipes</button>
+                <div class="dropdown-content">
+                    <a href="#">Breakfast</a>
+                    <a href="#">Lunch</a>
+                    <a href="#">Dinner</a>
+                    <a href="#">Desserts</a>
+                </div>
+            </div>
+            <a href="suggest-recipe.html">Suggest a Recipe</a>
+        </div>
+        <div class="welcome">
+            Don't see the recipe you're looking for?<br>
+            We add new recipes all the time! <br>
+            Leave a suggestion here.
+        </div>
+        <form action="/my-handling-form-page" method="post">
+            <h2>Suggest a Recipe</h2>
+            <ul>
+                <li>
+                    <label for="recipe-name">Recipe Name:</label>
+                    <input type="text" id="recipe-name" name="recipe-name"></input>
+                </li>
+                <li>
+                    <label for="recipe-source">Recipe Source:</label>
+                    <input type="text" id="recipe-source" name="recipe-source">
+                </li>
+                <li>
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients"></textarea>
+                </li>
+                <li>
+                    <label for="directions">Directions:</label>
+                    <textarea id="directions" name="directions"></textarea>
+                </li>
+                <li>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">E-mail Address:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li class="button">
+                    <button type="submit">Submit your recipe!</button>
+                </li>
+            </ul>
+        </form>
+        <div id="feedback"></div>
+    </main>
+    <footer>
+        &copy; 2020 Honest Recipes - Brienna Sambrano - WDD130
+    </footer>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.name.value +
+                '! Thank you for your suggestion. <br> Check back soon to see if your recipe has been added!';
+            feedbackElement.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>

@@ -3,11 +3,12 @@
         --primary-color: #F4F0BB;
         --secondary-color: #226F54;
         --accent1-color: #DA2C38;
-        --accent2-color: #87C38F;
-        --accent3-color:#43291F;
+        --accent2-color: #FFFFFF;
+        --accent3-color: #0B0B7C;
         --heading-font: 'Lora', serif;
         --paragraph-font: 'Merriweather', serif;
     }
+
     html{
         background-color: var(--primary-color)
     }

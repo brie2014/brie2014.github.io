@@ -7,51 +7,67 @@
     <title>Honest Recipes-Home Page</title>
     <meta name="description" content="Everyone loves a good home-cooked meal. With this website, these meals will be easy to come
     by. A delicious dinner is just one click away.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <header>
-            <picture><img src="images/honest-recipes-logo.png" alt="Logo"> </picture>
+            <picture><img class=logo src="images/honest-recipes-logo.png" alt="Logo"> </picture>
             <section class="heading">
                 <h1>Honest Recipes</h1>
-                <div class="motto">If you're hungry and want to get cooking, quick,
-                    this is the website for you!</div>
+                <div class="motto">Hungry? Get cooking quick!</div>
             </section>
         </header>
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Suggest a Recipe</a></li>
-            </ul>
-        </nav>
-        <p>Everyone loves a good home-cooked meal. With this website, these meals will be easy to come
-            by. Start exploring now for a delicious dinner.</p>
-        <div class="dinner-box">
-            <h2>Dinner Recipes</h2>
-            <a href=""><img src="" alt="Dinner Picture"></a>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Recipes</button>
+                <div class="dropdown-content">
+                    <a href="#">Breakfast</a>
+                    <a href="#">Lunch</a>
+                    <a href="#">Dinner</a>
+                    <a href="#">Desserts</a>
+                </div>
+            </div>
+            <a href="suggest-recipe.html">Suggest a Recipe</a>
         </div>
-        <div class="dessert-box">
-            <h2>Dessert Recipes</h2>
-            <a href=""><img src="" alt="Dessert Picture"></a>
+        <div class="welcome">
+            <p> Everyone loves a good home-cooked meal. Recipes on this website are tried and true. Each one is featured on the
+                top of the page. Start exploring now for a delicious dinner.</p>
         </div>
-        <div class="breakfast-box">
-            <h2>Breakfast Recipes</h2>
-            <a href=""><img src="" alt="Breakfast Picture"></a>
-        </div>
-        <div class="lunch-box">
-            <h2>Lunch Recipes</h2>
-            <a href=""><img src="" alt="Lunch Picture"></a>
+        <div class="home-grid">
+            <div class="dinner-box">
+                <a href="">
+                    <h2>Dinner Recipes</h2>
+                    <img src="images/sheet-pan-sausage-and-veggies.jpg" alt="Sausage and Veggies Sheet Pan">
+                </a>
+            </div>
+            <div class="dessert-box">
+                <a href="">
+                    <h2>Dessert Recipes</h2>
+                    <img src="images/gingersnap-cookies.jpg" alt="Gingersnap Cookies">
+                </a>
+            </div>
+            <div class="breakfast-box">
+                <a href="#">
+                    <h2>Breakfast Recipes</h2>
+                    <img src="images/banana-bread.jpg" alt="Banana Bread">
+                </a>
+            </div>
+            <div class="lunch-box">
+                <a href="">
+                    <h2>Lunch Recipes</h2>
+                    <img src="images/chicken-salad.jpg" alt="Chicken Salad">
+                </a>
+            </div>
         </div>
     </main>
     <footer>
-        &copy; 2020 Honest Recipes - Brienna Sambrano - WDD130
+        &copy; 2020 Honest Recipes - Brienna Sambrano - WDD130 <a href="site-plan.html">Site Plan</a>
     </footer>
 </body>
 
 </html>
-
-//Wireframe for reference https://wireframe.cc/niwBCw
