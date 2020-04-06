@@ -17,43 +17,48 @@
             <div class="motto">Hungry? Get cooking quick!</div>
         </section>
     </header>
-    <main>
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Recipes</button>
-                <div class="dropdown-content">
-                    <a href="breakfast-index.html">Breakfast</a>
-                    <a href="lunch-index.html">Lunch</a>
-                    <a href="dinner-index.html">Dinner</a>
-                    <a href="desserts-index.html">Desserts</a>
-                </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Recipes</button>
+            <div class="dropdown-content">
+                <a href="breakfast-index.html">Breakfast</a>
+                <a href="lunch-index.html">Lunch</a>
+                <a href="dinner-index.html">Dinner</a>
+                <a href="desserts-index.html">Desserts</a>
             </div>
-            <a href="suggest-recipe.html">Suggest a Recipe</a>
         </div>
+        <a href="suggest-recipe.html">Suggest a Recipe</a>
+    </nav>
+    <main>
         <div class="welcome">
-            Don't see the recipe you're looking for?<br>
-            We add new recipes all the time! <br>
-            Leave a suggestion here.
+            <p>Don't see the recipe you're looking for?<br>
+                We add new recipes all the time! <br>
+                Leave a suggestion here.
+            </p>   
         </div>
-        <form action="/my-handling-form-page" method="post">
+        <form>
             <h2>Suggest a Recipe</h2>
             <ul>
                 <li>
                     <label for="recipe-name">Recipe Name:</label>
-                    <input type="text" id="recipe-name" name="recipe-name"></input>
+                    <input type="text" id="recipe-name" name="recipe-name" autocomplete="off">
                 </li>
                 <li>
                     <label for="recipe-source">Recipe Source:</label>
-                    <input type="text" id="recipe-source" name="recipe-source">
+                    <input type="text" id="recipe-source" name="recipe-source" autocomplete="off">
                 </li>
                 <li>
                     <label for="ingredients">Ingredients:</label>
-                    <textarea id="ingredients" name="ingredients"></textarea>
+                    <textarea id="ingredients" name="ingredients" autocomplete="off"></textarea>
                 </li>
                 <li>
                     <label for="directions">Directions:</label>
-                    <textarea id="directions" name="directions"></textarea>
+                    <textarea id="directions" name="directions" autocomplete="off"></textarea>
+                </li>
+                <li>
+                    <label for="tips">Tips:</label>
+                    <textarea id="tips" name="tips" autocomplete="off"></textarea>
                 </li>
                 <li>
                     <label for="name">Your Name:</label>
@@ -68,7 +73,9 @@
                 </li>
             </ul>
         </form>
-        <div id="feedback"></div>
+        <div id="feedback">
+            <p>Hello <span class="name"></span>! Thank you for your suggestion. <br> Check back soon to see if your recipe has been added!';</p>
+        </div>
     </main>
     <footer>
         &copy; 2020 Honest Recipes - Brienna Sambrano - WDD130 <a href="site-plan.html">Site Plan</a>

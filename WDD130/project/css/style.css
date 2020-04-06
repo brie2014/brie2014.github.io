@@ -12,15 +12,14 @@ body {
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
     font-size: 18px;
-
 }
 
 header, nav, main, footer, .motto {
     max-width: 960px;
     margin: 0 auto;
     align-content: center;
-
 }
+
 .motto {
     font-family: var(--paragraph-font);
     font-style: italic;

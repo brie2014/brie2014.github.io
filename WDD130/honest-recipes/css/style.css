@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Merriweather&display=swap');
+    
     :root{
         --primary-color: #F4F0BB;
         --secondary-color: #226F54;
@@ -19,12 +20,26 @@
     }
 
     body{
-        max-width: 900px;
+        max-width: 960px;
         margin: 0 auto;
         background-color: var(--accent2-color);
         padding: 1em;
         font-family: var(--paragraph-font);
         font-size: 18px;
+    }
+
+    main {
+        min-height: 100vh;
+    }
+
+    picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .heading {
+        text-align: center;
+        margin: 0 1em;
     }
 
     img{
@@ -64,13 +79,14 @@
     .motto {
         font-family: var(--paragraph-font);
         font-style: italic;
-        font-size: 1rem;
+        font-size: 1em;
         color: var(--accent2-color);
     }
     
     header h1 {
         font-size: 3rem;
         margin: 15px 0px 0px; 
+        font-family: var(--heading-font);
     }
     
     h2 {
@@ -80,17 +96,18 @@
         margin-bottom: 0px;
     }
 
-    .navbar {
+    nav {
         overflow: hidden;
         background-color: var(--accent1-color);
-        
+        display: flex;
+
       }
       
-      .navbar a {
+      nav a {
         float: left;
         color: var(--accent2-color);
         text-align: center;
-        padding: 14px 16px;
+        padding: 1em 1em;
       }
     
       .dropdown {
@@ -103,14 +120,15 @@
         border: none;
         outline: none;
         color: var(--accent2-color);
-        padding: 14px 16px;
+        padding: 1em 1em;
         background-color: inherit;
         font-family: inherit;
         margin: 0; 
         text-decoration: underline;
+        cursor: pointer;
       }
       
-      .navbar a:hover, .dropdown:hover .dropbtn {
+      nav a:hover, .dropdown:hover .dropbtn {
         background-color: var(--accent3-color);
       }
       
@@ -155,23 +173,43 @@
           color: var(--accent2-color);
           text-align: right;
       }
-
+    
       .welcome {
           text-align: center;
           font-style: italic;
           font-family: var(--paragraph-font);
           color:var(--accent3-color);
-          padding: 1em 1em 0em;
-          margin: 10px auto 0px;
+          padding: 1em;
+          margin: 0px auto;
       }
 
-      .home-grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-right: 20px;
-        grid-gap: 20px; 
-        padding: 20px;
+      @media screen and (max-width: 600px) {
+        .home-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
       }
+     @media screen and (min-width: 600px) {
+        .home-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px; 
+            padding: 1em;
+          }
+          nav {
+              display: flex;
+              align-items: center;
+              justify-content: left;
+          }
+     } 
 
       .home-grid h2 {
           margin: 0px auto 10px;
@@ -190,7 +228,7 @@
 
       form {
         margin: 20px auto;
-        width: 600px;
+        max-width: 70vw;
         padding: 1em;
         border: 1px solid var(--accent1-color);
         border-radius: 1em;
@@ -215,7 +253,7 @@
         padding-bottom: 5px;
     }
 
-    form 
+    form input,
     textarea {
         font: 1em sans-serif;
         width: 100%;
@@ -225,14 +263,6 @@
         padding: 5px;
     }
 
-    form input {
-        font: 1em sans-serif;
-        display: inline-block;
-        width: auto;
-        justify-items: right;
-        width: 416px;
-        padding: 5px;
-    }
 
     input:focus,
     textarea:focus {
@@ -263,7 +293,7 @@
         font-size: 18px;
         font-weight: bold;
         display: none;
-        padding: 20px;
+        padding: 0px 20px 20px;
     }
 
     form h2 {
@@ -272,8 +302,8 @@
     }
 
     .recipe-index {
-        margin: 1em;
-        padding: 1em;
+        margin: 0.5em;
+        padding: 0.5em;
         text-align: center;
         list-style-type: none;
     }
@@ -288,7 +318,7 @@
 
     .recipe-grid {
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin: 20px;
         padding: 1em;
         border: 1px solid var(--accent1-color);
@@ -338,7 +368,7 @@
 
     .recipe-extras {
         text-align: center;
-        padding: 1em;
+        padding: 0em 1em 1em;
     }
 
     
