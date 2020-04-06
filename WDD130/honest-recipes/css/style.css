@@ -28,10 +28,6 @@
         font-size: 18px;
     }
 
-    main {
-        min-height: 100vh;
-    }
-
     picture {
         display: flex;
         align-items: center;
