@@ -41,6 +41,7 @@
     img{
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     h2, h3, h4, h5, 
@@ -235,7 +236,6 @@
             grid-row: 2/4;
             text-align: center;
             display: flex;
-            margin: 1em;
             align-items: center;
         }
     
