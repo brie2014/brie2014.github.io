@@ -32,7 +32,6 @@ img {
 
 footer {
     text-align: center;
-    padding-top: ;
 }
 
 footer a {
@@ -40,7 +39,7 @@ footer a {
 }
 
 #bottom {
-    color: darkblue;
+    color: yellow;
     font-size: 0.75em;
 }
 
