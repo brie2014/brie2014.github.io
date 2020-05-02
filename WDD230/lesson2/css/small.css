@@ -29,6 +29,7 @@ h3 {
 h3, .principle p, .principle a {
     margin: 0;
     padding: 1em;
+    line-height: normal;
 }
 
 header, footer {
@@ -53,6 +54,7 @@ header {
     overflow: hidden;
     margin: 2em 0em;
     background-color:  rgb(196, 245, 248);
+    display: grid;
     }
 
 img {
