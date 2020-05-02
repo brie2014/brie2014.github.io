@@ -1,0 +1,73 @@
+body {
+    font-family: 'Josefin Slab', serif;
+    margin: 0 auto;
+    max-width: 940px;
+    font-size: 14px;
+}
+
+h1, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    border-bottom: dotted 2px rgb(196, 245, 248);
+}
+
+h2 {
+    font-family: 'Jura', sans-serif;
+    color:  rgb(196, 245, 248);
+    margin: 0;
+}
+
+h3 {
+    background-color:  rgb(54, 115, 119);
+    border-bottom: dotted 2px rgb(196, 245, 248);
+}
+
+h3, .principle p, .principle a {
+    margin: 0;
+    padding: 1em;
+}
+
+header, footer {
+    background-color: rgb(54, 115, 119);
+}
+
+header {
+    padding: 2em;
+    border-top: dotted 2px rgb(196, 245, 248);
+    border-bottom: dotted 2px rgb(196, 245, 248);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.principle {
+    border: solid  rgb(54, 115, 119) 2px;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 2em 0em;
+    background-color:  rgb(196, 245, 248);
+    }
+
+img {
+    max-width: 300px;
+    margin-top: 1em;
+}
+
+footer, footer a {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer {
+    padding: 1.5em;
+    border-top: dotted 2px rgb(196, 245, 248);
+    border-bottom: dotted 2px rgb(196, 245, 248);
+}

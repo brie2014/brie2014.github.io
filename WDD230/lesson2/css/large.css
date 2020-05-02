@@ -1,0 +1,9 @@
+@media screen and (min-width: 900px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+}
