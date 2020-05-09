@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@700&family=Merriweather:wght@300&display=swap');
+    :root{
+        --header-heading: rgb(2, 8, 135);
+        --nav-color: rgb(158, 167, 168);
+        --main-bg: rgb(194, 231, 217);
+        --dark-text: rgb(13, 2, 33);
+        --light-text: rgb(255, 255, 255);
+        --header-font: 'Bitter', serif;
+        --heading-font: 'Abril Fatface', cursive;
+        --paragraph-font: 'Merriweather', serif;
+    }
+html {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: var(--main-bg);
+}
+
+main {
+    background-color: var(--light-text);
+    font-family: var(--paragraph-font);
+    color: var(--dark-text);
+    font-size: 14px;
+    padding: 1em 2em;
+    margin: 0, auto;
+}
+
+header, footer {
+    background-color: var(--header-heading);
+    color: var(--light-text);
+    font-size: 1.25em;
+    font-family: var(--header-font);
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--light-text);
+}
+
+img {
+    max-width: 300px;
+}
+
+h1 {
+    border: white 2px solid;
+    padding: 0.25em;
+    border-radius: 3px;
+}
+
+header h2, header p {
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: var(--nav-color);
+    font-family: var(--heading-font);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1.25em;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--header-heading);
+}
+
+a:hover {
+    background-color: white;
+}
+
+h3 {
+    color: var(--header-heading);
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+}
+
+.persona-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+table {
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+table, th, td, caption {
+    border: solid 1px var(--dark-text);
+    color: var(--dark-text);
+  }
+
+th, td {
+    padding: 0.5em;
+}
+
+.persona tr>:nth-child(1){ 
+    background-color: var(--main-bg);
+    text-align: center;
+    }
+
+caption {
+    font-size: 1.25em;
+    padding: 0.5em;
+}
+
+.colors{
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}      
+.colors th{
+    background-color: var(--nav-color);
+    height: 2em;
+    border-radius: 3px;
+}
+.colors td{
+    width: 20%;
+    height: 3em;
+}
+.header-bg{
+    background-color: var(--header-heading)
+}
+.main-bg{
+    background-color: var(--main-bg)
+}
+.navbar {
+    background-color: var(--nav-color);
+}
+.light-text{
+    background-color: var(--light-text)
+}
+.dark-text{
+    background-color: var(--dark-text)
+}
+
+.typography tr:nth-child(1) td:nth-child(1) {
+    background-color: var(--header-heading);
+    color: var(--light-text);
+}
+
+.typography .dark-bg {
+    background-color: var(--header-heading);
+    color: var(--light-text);
+}
+
+.typography .light-bg {
+    background-color: var(--main-bg);
+}
+
+.typography table {
+    table-layout: fixed; 
+    width: 100%;
+}

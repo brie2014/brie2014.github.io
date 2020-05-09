@@ -1,0 +1,10 @@
+@media screen and (min-width: 940px) {
+    main {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 900px;
+    }
+
+}
