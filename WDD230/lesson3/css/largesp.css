@@ -7,4 +7,10 @@
         max-width: 900px;
     }
 
+    .persona-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul li a {font-size: 1em;}
+
 }
