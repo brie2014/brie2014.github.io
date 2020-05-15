@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@700&family=Merriweather:wght@300&display=swap');
     :root{
         --header-heading: rgb(2, 8, 135);
-        --nav-color: rgb(158, 167, 168);
+        --nav-color: rgb(188, 198, 199);
         --main-bg: rgb(194, 231, 217);
         --dark-text: rgb(13, 2, 33);
         --light-text: rgb(255, 255, 255);
