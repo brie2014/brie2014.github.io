@@ -56,13 +56,14 @@ h1 {
 }
 
 header img {
-    max-width: 100px; 
+    width: 100px; 
     margin-right: 1em;
 }
 
 nav {
     background-color: var(--nav-color);
     font-family: var(--heading-font);
+    border-bottom: solid rgba(2, 8, 135, 0.3) 1px;
 }
 
 .responsive li {
