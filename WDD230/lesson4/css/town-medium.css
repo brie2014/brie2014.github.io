@@ -1,23 +1,27 @@
 @media screen and (min-width: 754px) {
-nav ul {
-    flex-direction: row;
-    justify-content: center;
-}
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
 
-nav ul li:first-child {
-    display: none;
-}
+    .responsive li {
+        display: block;
+    }
 
-body {
-    font-size: 14px;
-}
+    .responsive li:first-child {
+        display: none;
+    }
 
-header img {
-    width: 110px;
-}
+    nav ul li:first-child {
+        display: none;
+    }
 
-nav ul li {
-    border-bottom: none;
-}
+    body {
+        font-size: 14px;
+    }
+
+    header img {
+        width: 110px;
+    }
 
 }

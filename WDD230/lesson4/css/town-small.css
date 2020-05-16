@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@700&family=Merriweather:wght@300&display=swap');
-    :root{
-        --header-heading: rgb(2, 8, 135);
-        --nav-color: rgb(188, 198, 199);
-        --main-bg: rgb(194, 231, 217);
-        --dark-text: rgb(13, 2, 33);
-        --light-text: rgb(255, 255, 255);
-        --header-font: 'Bitter', serif;
-        --heading-font: 'Abril Fatface', cursive;
-        --paragraph-font: 'Merriweather', serif;
-    }
+
+:root {
+    --header-heading: rgb(2, 8, 135);
+    --nav-color: rgb(188, 198, 199);
+    --main-bg: rgb(194, 231, 217);
+    --dark-text: rgb(13, 2, 33);
+    --light-text: rgb(255, 255, 255);
+    --header-font: 'Bitter', serif;
+    --heading-font: 'Abril Fatface', cursive;
+    --paragraph-font: 'Merriweather', serif;
+}
+
 body {
     background-color: var(--main-bg);
     font-size: 12px;
@@ -25,7 +27,8 @@ main {
     grid-template-rows: auto 1fr auto;
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--header-heading);
     color: var(--light-text);
     padding: 20px;
@@ -56,7 +59,7 @@ h1 {
 }
 
 header img {
-    width: 100px; 
+    width: 100px;
     margin-right: 1em;
 }
 
@@ -67,7 +70,7 @@ nav {
 }
 
 .responsive li {
-    display: none; 
+    display: none;
 }
 
 .responsive li:first-child {
@@ -118,7 +121,7 @@ main div {
     border: dashed 1px var(--dark-text);
     margin: 1em 0em;
     padding: 1em;
-    
+
 }
 
 footer {
