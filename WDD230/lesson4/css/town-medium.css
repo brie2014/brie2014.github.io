@@ -6,6 +6,7 @@
 
     .responsive li {
         display: block;
+        border: none;
     }
 
     .responsive li:first-child {
