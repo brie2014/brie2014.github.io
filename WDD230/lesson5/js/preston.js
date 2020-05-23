@@ -14,10 +14,10 @@ document.getElementById('currentdate').innerHTML=date;
 
 //Pancake Banner 
 if (today.getDay()==5) { 
-    document.querySelector("pancake-banner").style.display += 'block';
+    document.querySelector(".pancake-banner").style.display = 'block';
 }
 
 else {
-    document.querySelector("pancake-banner").style.display = 'none';
+    document.querySelector(".pancake-banner").style.display = 'none';
 }
 

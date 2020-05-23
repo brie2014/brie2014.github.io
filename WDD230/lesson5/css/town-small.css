@@ -154,7 +154,7 @@ main div {
     background-color: rgba(194, 231, 217, 0.8);
     position: absolute;
     top: 1em;
-    left: 1em;
+    left: 2em;
     
 }
 
@@ -191,7 +191,7 @@ main div {
 }
 
 .article {
-    margin: 2em 1em;
+    margin: 4em 1em 1em;
     background-color: var(--light-blue);
     text-align: left;
     box-shadow: 8px 8px 8px gray;
