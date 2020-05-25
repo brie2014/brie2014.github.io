@@ -201,12 +201,6 @@ main div {
     font-style: italic;
 }
 
-.article img {
-    float: right;
-    margin: 1em;
-
-}
-
 .map-contact {
     box-shadow: 8px 8px 8px gray;
     display: flex;

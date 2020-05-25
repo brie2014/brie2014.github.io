@@ -8,20 +8,22 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\js\\increasesales.js"
+            "program": "${workspaceFolder}\\typescript",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\increasesales.js"
-        },
-        
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\js\\increasesales.js"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\typescript\\helloworld.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
