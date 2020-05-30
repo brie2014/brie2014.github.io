@@ -21,4 +21,13 @@ else {
     document.querySelector(".pancake-banner").style.display = 'none';
 }
 
-
+//API Font Load
+WebFont.load({
+    google: {
+      families: [
+         'Bitter',
+         'Abril Fatface',
+         'Merriweather'
+      ]
+    }
+  });

@@ -1,55 +1,45 @@
-//Defining Types
-//asign the type number to lucky
-let lucky:any = 23;
+//Defining Types: asign the type of data you want to lucky
+let lucky:any;
 
-lucky = "hello"; 
+lucky = '21'; 
 
-//add :any if you want it to be able to change types
-
-
-//Composing Types
-
-type animals = 'lion' | 'tiger' | 'bear' | 'cow' | 'dog';
-
-let favAnimal: animals;
-
-favAnimal = 'unicorn'; 
-
-favAnimal = 'bear'; 
-
-//By composing a type, you limit what values can be assigned;
+//Tip- :any allows any type of data to be accepted
 
 
-//Structural Type System
-//You can also enforce shapes of objects--this makes sure you have 
-//the same properties for similar objects
+//Composing Types: by creating a type, you limit what values can be assigned to a variable; 
+
+type animals = 'lion' | 'tiger' | 'bear' | 'unicorn' | 'dog' | 23 | true;
+
+let favAnimal:animals ;
+
+favAnimal = 'lion';
+favAnimal = 'unicorn';
+favAnimal = 'dog';
+favAnimal = 23;
+
+
+
+//Structural Type System: You can also enforce shapes of objects
+//This makes sure you have the same properties for similar objects
 
 interface churchLeader {
-    first: string;
-    last: string;
+    firstName: string;
+    lastName: string;
     age: number;
-    //[key: string]: any; 
+    [key: string]: any; 
 }
 
-const person: churchLeader = {
-    first: 'Russell',
-    last: 'Nelson',
+const person:churchLeader  = {
+    firstName: 'Russell',
+    lastName: 'Nelson',
     age: 95,
-    gender: 'male', 
+    gender: 'male',
+    nationality: 'American'
 }
 
-//ensures only certain types of data can be passed in functions
-function power(x, y) {
+//Using types snsures only certain types of data can be passed to functions
+function power(x:number, y:number) {
     return Math.pow(x,y);
 }
 
-power(5, 'fool')
-
-//
-type myList
-
-const arr: Person [] = []
-
-arr.push( 'Billy')
-arr.push ('Stewart')
-arr.push (24)
+power(5, 10)

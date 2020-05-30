@@ -4,3 +4,12 @@ document.getElementById('currentdate').innerHTML = date;
 
 let dateModified = document.lastModified;
 document.getElementById('dateandtime').innerHTML = dateModified
+
+WebFont.load({
+    google: {
+      families: [
+         'Righteous',
+         'Merriweather'
+      ]
+    }
+  });
