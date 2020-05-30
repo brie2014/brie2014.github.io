@@ -1,8 +1,7 @@
 //Caluculate Windchill using elements from a page
 let t = document.getElementById('currentTemp').textContent;
 let s = document.getElementById('windspeed').textContent;
-let w = windChill(t, s);
-document.getElementById('windchill').textContent = w;
+document.getElementById('windchill').textContent = windChill(t, s);
 
 
 function windChill(tempF, speed) {
@@ -14,5 +13,3 @@ function windChill(tempF, speed) {
 	  return "N/A";
 		}
 }
-
-//;
