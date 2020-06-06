@@ -29,15 +29,6 @@ main {
     grid-template-rows: auto 1fr auto;
 }
 
-.pancake-banner {
-    background-image: linear-gradient(yellow, var(--gray));
-    
-    padding: 1em;
-    text-align: center;
-    font-family: var(--heading-font);
-    color: var(--dark-blue);
-}
-
 header,
 footer {
     color: var(--light-text);
@@ -135,98 +126,41 @@ h3 {
     margin: 0;
 }
 
-main div {
-    padding: 2em; 
+.weather-gallery-main{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.herodiv {
-    margin: 0;
-    width: 100%;
-    position: relative;
-    padding: 0;
-}
-
-.weather-summary {
-    padding: 0.75em;
-    border-radius: 5px;
-    background-color: rgba(194, 231, 217, 0.8);
-    position: absolute;
-    top: 1em;
-    left: 2em;
-    
-}
-
-.weather-summary h3 {
-    text-decoration: underline;
-}
-
-.weather-summary ul {
-    list-style: none;
-    padding: 0em 1em;
-    
-}
-
-.five-day-div {
-    display: none;
-}
-
-.five-day-table {
-    border-collapse: collapse;
-    background-color: var(--light-text);
-    margin: 1em 1em;
-    width: 80%;
-    box-shadow: 8px 8px 8px gray;
-}
-
-.five-day-table tr:first-child {
+.weather-gallery-slot {
+    display: flex;
+    flex-direction: column;
     background-color: var(--gray);
+    padding: 0 0 1em;
+    box-shadow: 8px 8px 8px grey;
+    margin: 1em;
+    justify-content: space-between;
 }
 
-.five-day-table tr td {
-    border: 1px solid var(--dark-text);
-    padding: 1em;
+.weather-gallery-main img {
+    padding: 0 0 1em;
+    max-width: 100%;
+}
+
+.weather-gallery-slot figcaption {
+    margin: 0em 0.8em; 
+    font-size: 12.5px;
     text-align: center;
-}
-
-.article {
-    margin: 4em 1em 1em;
-    background-color: var(--light-blue);
-    text-align: left;
-    box-shadow: 8px 8px 8px gray;
-}
-
-.author {
     font-style: italic;
 }
 
-.map-contact {
-    box-shadow: 8px 8px 8px gray;
-    display: flex;
-    flex-flow: column-reverse;
-    align-items: center;
-    background-color: var(--gray);
-    margin: 1em;
-}
-
-.map-contact img {
-    width: 200px;
-}
-
-.contact-info {
-    text-align: center;
-}
-
-.social-media-icons {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-.social-media-icons img {
-    flex: 1 1 100%;
-    max-width: 30px;
-    margin-left: 1em;
-}
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 1s;
+  }
 
 footer {
     font-family: var(--paragraph-font);

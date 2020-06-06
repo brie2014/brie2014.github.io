@@ -1,0 +1,23 @@
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 128px;
+    }
+
+    main {
+        width: 900px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .weather-gallery-main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+    .weather-gallery-slot:hover {
+        box-shadow: 16px 16px 16px grey;
+    }
+}
