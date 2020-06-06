@@ -136,14 +136,14 @@ h3 {
     flex-direction: column;
     background-color: var(--gray);
     padding: 0 0 1em;
-    box-shadow: 8px 8px 8px grey;
+    border: solid 1px var(--dark-text);
     margin: 1em;
+    box-shadow: 5px 5px 5px grey;
     justify-content: space-between;
 }
 
 .weather-gallery-main img {
     padding: 0 0 1em;
-    max-width: 100%;
 }
 
 .weather-gallery-slot figcaption {
