@@ -74,4 +74,8 @@
         max-width: 40px;
     }
 
+    .weather-gallery-main{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

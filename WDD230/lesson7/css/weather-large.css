@@ -13,6 +13,18 @@
         padding: 20px 0;
     }
 
+    .weather-summary {
+        padding: 1em;
+    }
+
+    .map-contact img {
+        width: 350px;
+    }
+
+    .social-media-icons img {
+        max-width: 40px;
+    }
+
     .weather-gallery-main{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -20,4 +32,5 @@
     .weather-gallery-slot:hover {
         box-shadow: 16px 16px 16px grey;
     }
+   
 }
