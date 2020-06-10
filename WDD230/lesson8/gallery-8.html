@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Gallery</title>
+    <meta name="description" content="View local weather pictures submitted by our users.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/weather-small.css">
+    <link rel="stylesheet" href="css/weather-medium.css">
+    <link rel="stylesheet" href="css/weather-large.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/se-id-weather-logo.png" alt="SE-ID Weather Logo">
+        <section class="header-text">
+            <h1>SE-ID Weather</h1>
+            <div class="motto">Connecting our communities</div>
+        </section>
+    </header>
+    <nav>
+        <ul class='responsive'>
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="weather-gallery-main">
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/cloudy-idaho-hills.jpg' alt='clouds over rolling Idaho hills'>
+                <figcaption>Clouds over rolling Idaho hills</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/cloudy-mountains.jpg' alt='Clouds on a mountain range'>
+                <figcaption>Clouds on a mountain range</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/lightning-dark-tree.jpg' alt='Lightning striking at night by a tree'>
+                <figcaption>Lightning striking at night by a tree</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/snowy-buildings.jpg' alt='Snow falling on brick buildings'>
+                <figcaption>Snow falling on brick buildings</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/sun-rays-mountains.jpg' alt='Sun rays on the plains in front of mountains'>
+                <figcaption>Sun rays on mountain plains</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/sunny-mountains.jpg' alt='Clear sunny skies on a forested lake'>
+                <figcaption>Clear sunny skies on a forested lake</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/lightning-dark-horizon.jpg' alt='Lightning striking on a dark horizon'>
+                <figcaption>Lightning striking on a dark horizon</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/lightning-field.jpg' alt='Lightning striking in a field'>
+                <figcaption>Lightning striking in a field</figcaption>
+            </figure>
+            <figure class="weather-gallery-slot">
+                <img src='images/placeholder.png' data-src='images/weather-gallery/tornado.jpg' alt='Tornado forming in a storm'>
+                <figcaption>Tornado forming in a storm</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; SE-ID Weather | Attributions | Brienna Sambrano</p>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/lazyload.js'></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
