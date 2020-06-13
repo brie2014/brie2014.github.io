@@ -32,5 +32,9 @@
     .weather-gallery-slot:hover {
         box-shadow: 16px 16px 16px grey;
     }
+
+    textarea {
+        max-width: 600px;
+    }
    
 }

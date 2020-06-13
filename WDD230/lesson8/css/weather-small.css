@@ -269,19 +269,32 @@ img {
     transition: filter 1.5s;
   }
 
+.center-align {
+    text-align: center;
+}
+
+.report {
+    margin: 1rem;
+    background-color: var(--light-blue);
+    text-align: left;
+    box-shadow: 8px 8px 8px gray;
+}
+
   form fieldset {
     margin: 2rem 0;
     border: 2px solid var(--dark-blue);
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: 1rem 4%;
     font-size: 1rem;
     font-weight: bold;
+    background-color: var(--light-text);
 }
 
 form legend {
     color: var(--dark-blue);
     margin: 0 1rem;
     padding: 0 0.5rem;
+    font-size: 1.25rem;
 }
 
 form label.top {
@@ -297,8 +310,7 @@ form div {
     padding: 2rem 0 0.5rem 0;
 }
 
-form label.top input, form label.top select {
-    /*-webkit-appearance: none;*/
+form label.top input, form label.top select, textarea {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -307,18 +319,26 @@ form label.top input, form label.top select {
     margin-top: 3px;
     color: var(--dark-text);
     width: 100%;
-    max-width: 20rem;
-    background-color: rgba(194, 231, 217, 0.2);
-}
-
-form label.slider {
-    display: block;
-	padding: 1em;
+    max-width: 12rem;
+    background-color: rgba(188, 198, 199, 0.5);
 }
 
 form label.sbs {
     display: block;
     padding: .75rem 0;
+}
+
+form label.slider {
+    display: block;
+    padding-top: 1rem;
+    color: var(--dark-text);
+}
+
+form label.slider input {
+    display: block;
+    margin-top: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 form input.submitBtn {
@@ -338,4 +358,23 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left:green solid 6px;
+}
+
+.thanks {
+    text-align: center;
+}
+
+.thanks input.submitBtn {
+    margin: 1rem;
+}
+
+/*Hide arrows on zip code number box*
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }

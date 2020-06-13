@@ -78,4 +78,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    textarea {
+        max-width: 475px;
+    }
+
+    form label.top input, form label.top select {
+        max-width: 20rem;
+    }
+
 }
