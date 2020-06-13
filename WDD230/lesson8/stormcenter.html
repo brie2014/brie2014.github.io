@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Page</title>
+    <meta name="description" content="Find all weather and community updates for Preston here.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/weather-small.css">
+    <link rel="stylesheet" href="css/weather-medium.css">
+    <link rel="stylesheet" href="css/weather-large.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/se-id-weather-logo.png" alt="SE-ID Weather Logo">
+        <section class="header-text">
+            <h1>SE-ID Weather</h1>
+            <div class="motto">Connecting our communities</div>
+        </section>
+    </header>
+    <nav>
+        <ul class='responsive'>
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form action="">
+           
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name*<input type="text" name="fullName" required minlength="5"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required placeholder="1112223333"></label>
+                <label class="top">Zip Code*<input type="number" name="zip" required></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                <label class="top">Storm Type
+                    <input list="stormTypes" name="stormType">
+                    <datalist id=stormTypes>
+                        <option value="Blizzard"></option>
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option disabled selected hidden value="">Please Select</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                    </select>
+                </label>
+                <div>
+                    <label class="sbs"> Storm Severity (slide to adjust): 
+                        <input type="range" name="severityInput" id="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                        <span id="severityValue"> 5</span>
+                    </label>
+                </div>
+                <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Please include any additional information or comments <input type="textarea" name="comments"></label>
+            </fieldset>
+            
+            <input type="submit" value="Send Storm Report" class="submitBtn">
+            
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy; SE-ID Weather | Attributions | Brienna Sambrano</p>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

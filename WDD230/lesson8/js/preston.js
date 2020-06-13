@@ -12,6 +12,23 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 let date = weekdays[today.getDay()] + ', ' + today.getDate() + " " + months[today.getMonth()] + " " + today.getFullYear();
 document.getElementById('currentdate').innerHTML=date;
 
+//API Font Load
+WebFont.load({
+  google: {
+    families: [
+       'Bitter',
+       'Abril Fatface',
+       'Merriweather'
+    ]
+  }
+});
+
+//Range Value
+function adjustSeverity(severity) {
+  document.getElementById("severityValue").innerHTML = severity;
+}
+  //oninput= document.getElementById(severityOutputId).value = document.getElementById(severityInputID).value
+
 //Pancake Banner 
 if (today.getDay()==5) { 
     document.querySelector(".pancake-banner").style.display = 'block';
@@ -21,13 +38,4 @@ else {
     document.querySelector(".pancake-banner").style.display = 'none';
 }
 
-//API Font Load
-WebFont.load({
-    google: {
-      families: [
-         'Bitter',
-         'Abril Fatface',
-         'Merriweather'
-      ]
-    }
-  });
+
