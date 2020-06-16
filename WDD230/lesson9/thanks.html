@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Page</title>
+    <meta name="description" content="Find all weather and community updates for Preston here.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/weather-small.css">
+    <link rel="stylesheet" href="css/weather-medium.css">
+    <link rel="stylesheet" href="css/weather-large.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/se-id-weather-logo.png" alt="SE-ID Weather Logo">
+        <section class="header-text">
+            <h1>SE-ID Weather</h1>
+            <div class="motto">Connecting our communities</div>
+        </section>
+    </header>
+    <nav>
+        <ul class='responsive'>
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="thanks">
+            <h2>Thank you!</h2>
+            <p>Your storm report has been submitted. Your input is greatly valued and appreciated.</p>
+            <form method="get" action="stormcenter.html">
+                <input type="submit" value="Create Another Storm Report" class="submitBtn">
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; SE-ID Weather | Attributions | Brienna Sambrano</p>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

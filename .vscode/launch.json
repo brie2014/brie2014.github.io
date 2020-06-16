@@ -11,6 +11,9 @@
             "program": "${workspaceFolder}\\typescript",
             "skipFiles": [
                 "<node_internals>/**"
+            ],
+            "outFiles": [
+                "${brie2014.github.io/WDD230}/out/**/*.js"
             ]
         },
         {
