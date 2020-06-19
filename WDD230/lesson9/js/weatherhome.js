@@ -41,7 +41,7 @@ fetch(requestURL)
         seidtowns.forEach(town => {
             let townCard = document.createElement('div');
                 townCard.classList.add("article");
-                townCard.classList.add("")
+                townCard.classList.add("card")
             let townName = document.createElement('h2');
             let motto = document.createElement('h3');
             let image = document.createElement('img');
