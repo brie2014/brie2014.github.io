@@ -368,13 +368,7 @@ form label.top input:required:valid {
     margin: 1rem;
 }
 
-/*Hide arrows on zip code number box*
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
+/*Wireframes for Index
+Large: https://wireframe.cc/bNxkbq
+Medium: https://wireframe.cc/potSNj
+Small: https://wireframe.cc/qg9GBD
