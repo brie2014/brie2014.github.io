@@ -36,5 +36,29 @@
     textarea {
         max-width: 600px;
     }
-   
+
+    .card-container {
+        flex-direction: row;
+    }
+    
+    .townCard {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .townCard, .townPic {
+        flex: 1 1 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .townCard:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .town-pic {
+        padding: 1rem;
+        
+    }
+
 }

@@ -39,31 +39,36 @@ fetch(requestURL)
             town.name == "Preston" || town.name == "Fish Haven" || town.name == "Soda Springs"));
 
         seidtowns.forEach(town => {
-            let townCard = document.createElement('div');
-                townCard.classList.add("article");
-                townCard.classList.add("card")
-            let townName = document.createElement('h2');
-            let motto = document.createElement('h3');
-            let image = document.createElement('img');
-            let year = document.createElement('p');
-            let pop = document.createElement('p');
-            let avgRain = document.createElement('p');
+            let townCard = document.createElement('section');
+                townCard.classList.add("townCard")
+            let townInfo = document.createElement('div');
+                townInfo.classList.add("town-info")
+                let townName = document.createElement('h2');
+                let motto = document.createElement('p');
+                    motto.classList.add('town-motto');
+                let year = document.createElement('p');
+                let pop = document.createElement('p');
+                let avgRain = document.createElement('p');
+            let townPic = document.createElement('div');
+                townPic.classList.add("town-pic")
+                let image = document.createElement('img');
 
             townName.textContent = town.name;
-            motto.textContent = town.motto;
-            image.setAttribute('src', town.photo);
-            image.setAttribute('alt', town.name);
+            motto.textContent = '"' + town.motto + '"'; 
             year.textContent = 'Founded in: ' + town.yearFounded
             pop.textContent = 'Current Population: ' + town.currentPopulation;
-            avgRain.textContent = 'Average Rainfall: ' + town.averageRainfall;
+            avgRain.textContent = 'Average Rainfall: ' + town.averageRainfall +' in.';
+            image.setAttribute('src', town.photo);
+            image.setAttribute('alt', town.name);
 
-
-            townCard.appendChild(townName);
-            townCard.appendChild(motto);
-            townCard.appendChild(image);
-            townCard.appendChild(year);
-            townCard.appendChild(pop);
-            townCard.appendChild(avgRain);
-            document.querySelector('div.town-cards').appendChild(townCard);
+            townInfo.appendChild(townName);
+            townInfo.appendChild(motto);
+            townInfo.appendChild(year);
+            townInfo.appendChild(pop);
+            townInfo.appendChild(avgRain);
+            townCard.appendChild(townInfo);
+            townPic.appendChild(image);
+            townCard.appendChild(townPic);
+            document.querySelector('div.card-container').appendChild(townCard);
         });
     });
