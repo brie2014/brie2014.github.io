@@ -35,8 +35,8 @@ fetch(requestURL)
 
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
-        const seidtowns = towns.filter(town => (
-            town.name == "Preston" || town.name == "Fish Haven" || town.name == "Soda Springs"));
+        const seidtowns = towns.filter(city => (
+            city.name == "Preston" || city.name == "Fish Haven" || city.name == "Soda Springs"));
 
         seidtowns.forEach(town => {
             let townCard = document.createElement('section');
