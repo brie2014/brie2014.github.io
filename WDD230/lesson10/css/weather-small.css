@@ -1,0 +1,422 @@
+:root {
+    --dark-blue: rgb(2, 8, 135);
+    --gray: rgb(188, 198, 199);
+    --light-blue: rgb(194, 231, 217);
+    --dark-text: rgb(13, 2, 33);
+    --light-text: rgb(255, 255, 255);
+    --header-font: 'Bitter', serif;
+    --heading-font: 'Abril Fatface', cursive;
+    --paragraph-font: 'Merriweather', serif;
+}
+
+body {
+    
+    font-size: 13px;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background-color: var(--light-text);
+    font-family: var(--paragraph-font);
+    color: var(--dark-text);
+    padding: 1em 0em;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.pancake-banner {
+    background-image: linear-gradient(yellow, var(--gray));
+    
+    padding: 1em;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--dark-blue);
+}
+
+header,
+footer {
+    color: var(--light-text);
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-image: linear-gradient(var(--dark-blue), var(--light-blue));
+    border-radius: 2px;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 2em;
+    margin: 0;
+}
+
+.motto {
+    font-style: italic;
+    font-family: var(--paragraph-font);
+}
+
+header img {
+    width: 100px;
+    margin-right: 1em;
+}
+
+nav {
+    background-image: linear-gradient(var(--light-blue), var(--gray));
+    font-family: var(--heading-font);
+    border-bottom: solid rgba(2, 8, 135, 0.3) 1px;
+}
+
+.responsive li {
+    display: none;
+}
+
+.responsive li:first-child {
+    display: block;
+    border: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    border-bottom: solid rgba(2, 8, 135, 0.3) 1px;
+}
+
+nav ul li a {
+    text-align: center;
+    font-size: 1.25em;
+    display: block;
+    padding: 1.25em;
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h3 {
+    color: var(--dark-blue);
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+.town {
+    padding: 2em; 
+}
+
+.herodiv {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.weather-summary {
+    padding: 0.75em;
+    border-radius: 5px;
+    background-color: rgba(194, 231, 217, 0.8);
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    
+}
+
+.weather-summary h3 {
+    text-decoration: underline;
+}
+
+.weather-summary ul {
+    list-style: none;
+    padding: 0em 1em;
+    
+}
+
+.five-day-div {
+    display: none;
+}
+
+.five-day-table {
+    border-collapse: collapse;
+    background-color: var(--light-text);
+    margin: 1em 1em;
+    width: 80%;
+    box-shadow: 8px 8px 8px gray;
+}
+
+.five-day-table tr:first-child {
+    background-color: var(--gray);
+}
+
+.five-day-table tr td {
+    border: 1px solid var(--dark-text);
+    padding: 1em;
+    text-align: center;
+}
+
+.article {
+    margin: 4em 1em 1em;
+    background-color: var(--light-blue);
+    text-align: left;
+    box-shadow: 8px 8px 8px gray;
+}
+
+.author {
+    font-style: italic;
+}
+
+.map-contact {
+    box-shadow: 8px 8px 8px gray;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    background-color: var(--gray);
+    margin: 1em;
+}
+
+.map-contact img {
+    width: 200px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-media-icons img {
+    flex: 1 1 100%;
+    max-width: 30px;
+    margin-left: 1em;
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    background-image: linear-gradient(var(--gray), var(--dark-blue));
+}
+
+.weather-gallery-main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.weather-gallery-slot {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    padding: 0 0 1em;
+    border: solid 1px var(--dark-text);
+    margin: 1em;
+    box-shadow: 5px 5px 5px grey;
+    justify-content: space-between;
+}
+
+.weather-gallery-main img {
+    padding: 0 0 1em;
+}
+
+.weather-gallery-slot figcaption {
+    margin: 0em 0.8em; 
+    font-size: 12.5px;
+    text-align: center;
+    font-style: italic;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+  }
+
+.center-align {
+    text-align: center;
+}
+
+.report {
+    margin: 1rem;
+    background-color: var(--light-blue);
+    text-align: left;
+    box-shadow: 8px 8px 8px gray;
+}
+
+.form-heading {
+    padding: 2rem 0 0 2rem;
+}
+
+  form fieldset {
+    margin: 2rem 0;
+    border: 2px solid var(--dark-blue);
+    border-radius: 10px;
+    padding: 1rem 4%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--light-text);
+}
+
+form legend {
+    color: var(--dark-blue);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--dark-text);
+    font-size: .8rem;
+}
+
+form div {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding: 2rem 0 0.5rem 0;
+}
+
+form label.top input, form label.top select, textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    margin-top: 3px;
+    color: var(--dark-text);
+    width: 100%;
+    max-width: 12rem;
+    background-color: rgba(188, 198, 199, 0.5);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+form label.slider {
+    display: block;
+    padding-top: 1rem;
+    color: var(--dark-text);
+}
+
+form label.slider input {
+    display: block;
+    margin-top: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left:green solid 6px;
+}
+
+.thanks {
+    text-align: center;
+}
+
+.thanks input.submitBtn {
+    margin: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.townCard {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+    box-shadow: 8px 8px 8px gray;
+    margin: 1rem;
+}
+
+.town-info {
+    margin: 1rem 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.town-info h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.town-info p {
+    margin: 0.25rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+p.town-motto {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+
+/*Wireframes for Index
+Large: https://wireframe.cc/bNxkbq
+Medium: https://wireframe.cc/potSNj
+Small: https://wireframe.cc/qg9GBD

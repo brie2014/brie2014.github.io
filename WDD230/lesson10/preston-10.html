@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Page</title>
+    <meta name="description" content="Find all weather and community updates for Preston here.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/weather-small.css">
+    <link rel="stylesheet" href="css/weather-medium.css">
+    <link rel="stylesheet" href="css/weather-large.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div class='pancake-banner'>
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+     </div>
+    <header>
+        <img src="images/se-id-weather-logo.png" alt="SE-ID Weather Logo">
+        <section class="header-text">
+            <h1>SE-ID Weather</h1>
+            <div class="motto">Connecting our communities</div>
+        </section>
+    </header>
+    <nav>
+        <ul class='responsive'>
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston</h2>
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/sunsethero940px.jpg" media="(min-width:900px)"/>
+                <source srcset="images/sunsethero900px.jpg" media="(min-width:675px)"/>
+                <img src="images/sunsethero675px.jpg" alt="Franklin, Idaho colorful sunset"/>
+            </picture>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li><b>Currently:</b> <span id='condition'></span></li>
+                    <li><b>Temperature:</b> <span id='currentTemp'></span>°F</li>
+                    <li><b>Today's High:</b> <span id='highTemp'></span>°F</li>
+                    <li><b>Wind Speed:</b> <span id='windspeed'></span>mph</li>
+                    <li><b>Wind Chill:</b> <span id='windchill'></span></li>
+                    <li><b>Humidity:</b> <span id='humidity'></span>%</li>
+                </ul>
+            </section>
+        </div>
+        <div class="five-day-div">
+            <h3>5 Day Forcast</h3>
+            <table class="five-day-table">
+                <tr>
+                    <td><span id="dayofweek1"></span></td>
+                    <td><span id="dayofweek2"></span></td>
+                    <td><span id="dayofweek3"></span></td>
+                    <td><span id="dayofweek4"></span></td>
+                    <td><span id="dayofweek5"></span></td>
+                </tr>
+                <tr>
+                    <td><img id="icon1" src="" alt=""> <span id="forecast1"></span>°F</td>
+                    <td><img id="icon2" src="" alt=""> <span id="forecast2"></span>°F</td>
+                    <td><img id="icon3" src="" alt=""> <span id="forecast3"></span>°F</td>
+                    <td><img id="icon4" src="" alt=""> <span id="forecast4"></span>°F</td>
+                    <td><img id="icon5" src="" alt=""> <span id="forecast5"></span>°F</td>
+                </tr>
+            </table>
+        </div>
+        <div class="article town">
+            <h3>Plants in Preston</h3>
+            <p class="author">by Jane Smith</p>
+            <img src="images/red-flower.jpg" alt="red flower on tree">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, nisi, nam corporis non recusandae
+                laudantium consequatur sit quasi ipsam soluta, dolorum ad. Debitis consequatur unde fuga sapiente
+                recusandae explicabo ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                assumenda vitae porro, voluptates explicabo eaque beatae fuga eius, odit hic voluptatum quod eum
+                blanditiis veritatis quibusdam qui consequuntur accusamus consequatur.</p>
+           
+        </div>
+        <div class="map-contact town">
+            <div>
+                <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173">
+                    <img src="images/preston-map.JPG" alt="preston-map">
+                </a>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><b>SE-ID Weather</b><br>
+                    10 E Main St.<br>
+                    Preston, ID 83263</p>
+                <p>&#x260F; 208-852-1234<br>
+                    &#x2709; contact@seidweather.org
+                </p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube Icon"></a>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        <p>&copy; SE-ID Weather | Attributions | Brienna Sambrano</p>
+        <span id="currentdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
