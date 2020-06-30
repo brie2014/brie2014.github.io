@@ -1,0 +1,66 @@
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 128px;
+    }
+
+    main {
+        width: 900px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .weather-summary {
+        padding: 0.5em;
+    }
+
+   
+
+    .map-contact img {
+        width: 350px;
+    }
+
+    .social-media-icons img {
+        max-width: 40px;
+    }
+
+    .weather-gallery-main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+    .weather-gallery-slot:hover {
+        box-shadow: 16px 16px 16px grey;
+    }
+
+    textarea {
+        max-width: 600px;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+    
+    .townCard {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .townCard, .townPic {
+        flex: 1 1 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .townCard:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .town-pic {
+        padding: 1rem;
+        
+    }
+
+}

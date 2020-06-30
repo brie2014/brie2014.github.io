@@ -1,0 +1,101 @@
+@media screen and (min-width: 674px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .responsive li {
+        display: block;
+        border: none;
+    }
+
+    .responsive li:first-child {
+        display: none;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header img {
+        width: 110px;
+    }
+
+    .weather-summary ul li {
+        padding: 0.25em; 
+    }
+
+    .weather-summary {
+        top: 1em;
+        left: 2em;
+    }
+    
+    .article {
+        margin: 1.5em;
+    }
+
+    .article img {
+        float: right;
+        margin: 1em;
+    
+    }
+
+    .five-day-div {
+        display: flex;
+        flex-direction: column;
+        margin: 2em 0 1em;
+        align-items: center;
+    }
+
+    .map-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        margin: 2em;
+    }
+
+    .map-contact img {
+        width: 300px;
+    }
+
+    .contact-info {
+        text-align: right;
+    }
+
+    .social-media-icons {
+        justify-content: flex-end;
+    }
+
+    .social-media-icons img {
+        max-width: 40px;
+    }
+
+    .weather-gallery-main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    textarea {
+        max-width: 475px;
+    }
+
+    form label.top input, form label.top select {
+        max-width: 20rem;
+    }
+
+    .townCard {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .townCard:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .townCard > * {
+        flex: 1 1 100%;
+    }
+}
