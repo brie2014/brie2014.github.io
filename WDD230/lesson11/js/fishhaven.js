@@ -1,5 +1,5 @@
 //Weather Summary API
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=248a434ae5aa7fbe3c86086c0b05cb60&units=imperial';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=248a434ae5aa7fbe3c86086c0b05cb60&units=imperial';
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -12,7 +12,7 @@ fetch(apiURL)
     });
 
 //Weather Forecast API
-const apiforecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=248a434ae5aa7fbe3c86086c0b05cb60&units=imperial';
+const apiforecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=248a434ae5aa7fbe3c86086c0b05cb60&units=imperial';
 
 fetch(apiforecastURL)
     .then((response) => response.json())
@@ -48,22 +48,12 @@ fetch(requestURL)
 
     .then(function (jsonObject) {
         const cities = jsonObject['towns'];
-        const preston = cities.filter(city => (
-            city.name == "Preston"));
-        const listofevents = preston[0].events;
+        const sodaSprings = cities.filter(city => (
+            city.name == "Fish Haven"));
+        const listofevents = sodaSprings[0].events;
         listofevents.forEach(event => {
             let eventList = document.createElement('p');
             eventList.textContent = event;
             document.querySelector('div.events').appendChild(eventList);
         })
     });    
-
-//Pancake Banner 
-if (today.getDay()==5) { 
-    document.querySelector(".pancake-banner").style.display = 'block';
-}
-else {
-    document.querySelector(".pancake-banner").style.display = 'none';
-}
-
-
