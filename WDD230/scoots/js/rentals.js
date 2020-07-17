@@ -9,25 +9,30 @@ fetch(requestURL)
 
   .then(function (jsonObject) {
     
-    const prophets = jsonObject['prophets'];
-    for (let i = 0; i < prophets.length; i++ ) {
-      let card = document.createElement('section');
-      let h2 = document.createElement('h2');
-      let bd = document.createElement('p');
-      let bp = document.createElement('p'); 
-      let image = document.createElement('img');
+    const vehicles = jsonObject['vehicles'];
+    for (let i = 0; i < vehicles.length; i++ ) {
+      let row = document.createElement('tr');
+      let type = document.createElement('td'); 
+      let rh = document.createElement('td'); 
+      let rf = document.createElement('td'); 
+      let wh = document.createElement('td'); 
+      let wf = document.createElement('td'); 
 
-      h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-      bd.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-      bp.textContent = 'Place of Birth: ' + prophets[i].birthplace; 
-      image.setAttribute('src', prophets[i].imageurl);
-      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
+      type.textContent = vehicles[i].type;
+      rh.textContent = vehicles[i].res-half;
+      rf.textContent = vehicles[i].res-full;
+      wh.textContent = vehicles[i].walk-half;
+      wf.textContent = vehicles[i].walk-full;
 
-      card.appendChild(h2);
-      card.appendChild(bd);
-      card.appendChild(bp);
-      card.appendChild(image);
-      document.querySelector('div.cards').appendChild(card);
+      row.appendChild(type);
+      row.appendChild(rh);
+      row.appendChild(rf);
+      row.appendChild(wh);
+      row.appendChild(wf);
+      document.querySelector('table.rentals-table').appendChild(row);
 
     }
   });
+
+  /*      image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order); */
