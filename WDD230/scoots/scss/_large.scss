@@ -1,0 +1,58 @@
+body {
+    font-size: 16px;
+}
+
+header img {
+    width: 128px;
+}
+
+main {
+    width: 1000px;
+}
+
+.herodiv {
+    .herotext {
+            h3 {top: 1rem;
+                left: 3rem;
+                } 
+            .welcome { bottom: 3rem;
+                right: 3rem;
+            }  
+        }//end .herotext
+    }//end .herodiv
+
+ .current-weather {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        section, img{
+            width: 25%;
+            border-radius: 8px;
+            text-align: center;
+        }//end section, img
+    }//end .current-weather
+
+.five-day-table {
+    display: block;
+    border-collapse: collapse;
+    margin: 1em 1em;
+    padding: 0;
+}
+
+.five-day-table tr:first-child {
+    background-color: $accentBlue;
+    color: $white;
+}
+
+.five-day-table tr td {
+    border: 1px solid $black;
+    padding: 1em;
+    text-align: center;
+}
+
+
+.map {
+    iframe {
+        width: 400px;
+    }  
+}

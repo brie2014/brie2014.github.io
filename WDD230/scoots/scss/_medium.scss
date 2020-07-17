@@ -1,0 +1,81 @@
+body {
+    font-size: 15px;
+}
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.responsive li {
+    display: block;
+    border: none;
+}
+
+.responsive li:first-child {
+    display: none;
+}
+
+nav ul li:first-child {
+    display: none;
+}
+
+main {
+    width: 720px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+            "head head"
+            "hero hero"
+            "vehicle weather"
+            "info info";
+}
+
+header img {
+    width: 110px;
+}
+
+.herodiv{
+    .herotext {
+        display: flex;
+        flex-direction: column;
+    
+        h3{
+            margin: 0;
+            top: 1rem;
+            left: 2rem;
+            }
+    
+       .welcome {display: block;
+            padding: 0.75rem;
+            bottom: 1rem;
+            right: 2rem;
+            p {display:block;}  
+            }//end .welcome  
+        }//end .herotext
+}//end .herodiv
+
+    
+
+
+.map-contact {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 1rem;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.map iframe {
+    display: block;
+    max-width: 100%;
+}
+
+.map-link {
+display: none;
+} 
+
+.social-media-icons {
+    justify-content: flex-end;
+}
