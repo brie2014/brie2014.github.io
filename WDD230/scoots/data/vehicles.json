@@ -1,17 +1,7 @@
 {
     "vehicles": [
         {
-        "type": "Honda Metro Scooter",
-        "persons": "1",
-        "reshalf": "$20",
-        "resfull": "$30",
-        "walkhalf": "$25",
-        "walkfull": "$35",
-        "image": "images/rentals/metro.jpg"
-        },
-
-        {
-            "type": "Honda Dio Scooter",
+            "type": "Honda Dio Scooter (110cc)",
             "persons": "2",
             "reshalf": "$30",
             "resfull": "$40",
@@ -21,7 +11,17 @@
             },
         
         {
-            "type": "Honda PCX150 Scooter",
+        "type": "Honda Metro Scooter (49cc)",
+        "persons": "1",
+        "reshalf": "$20",
+        "resfull": "$30",
+        "walkhalf": "$25",
+        "walkfull": "$35",
+        "image": "images/rentals/metro.jpg"
+        },
+        
+        {
+            "type": "Honda PCX150 Scooter (149cc)",
             "persons": "2",
             "reshalf": "$40",
             "resfull": "$50",
@@ -31,7 +31,7 @@
             },
         
         {
-            "type": "Honda Pioneer ATV",
+            "type": "Honda Pioneer 1000 ATV",
             "persons": "4",
             "reshalf": "$50",
             "resfull": "$70",
@@ -41,23 +41,23 @@
             },
 
         {
-            "type": "Jeep Wrangler  4 Door with A/C",
-            "persons": "5",
-            "reshalf": "$70",
-            "resfull": "$100",
-            "walkhalf": "$85",
-            "walkfull": "$125",
-            "image": "images/rentals/jeep4door.jpg"
-            },
-
-        {
-            "type": "Jeep Wrangler  2 Door",
+            "type": "Jeep Wrangler - 2 Door (open-air)",
             "persons": "4",
             "reshalf": "$60",
             "resfull": "$85",
             "walkhalf": "$70",
             "walkfull": "$90",
             "image": "images/rentals/jeep2door.jpg"
+            },
+
+        {
+            "type": "Jeep Wrangler - 4 Door with A/C (manual)",
+            "persons": "5",
+            "reshalf": "$70",
+            "resfull": "$100",
+            "walkhalf": "$85",
+            "walkfull": "$125",
+            "image": "images/rentals/jeep4door.jpg"
             }
     ]
 

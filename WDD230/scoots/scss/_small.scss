@@ -176,7 +176,7 @@ h3 {
             font-size: 1.25rem;}     
 }
 
-.btn-container {
+.btn-container, .submitBtn {
     display: flex;
     justify-content: center;
     
@@ -310,8 +310,67 @@ footer, footer a {
     color: $white;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        color: $accentBlue;
+        background-color: $white;
+        border: solid 2px $accentRed;
+        border-radius: 8px;
+        
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        label {
+            padding: 0.5rem;
+        }
+
+        ul {
+            margin: 1rem;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sbs {
+            display: flex;
+            padding: 1rem;
+        }
+
+        .sbs label {
+            display: flex;
+            align-items: center;
+        }
+
+        .padding {
+            margin-right: 1rem;
+        }
+
+    }
+    .submitBtn {
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+    font-family: $paragraphFont;
+    font-size: 1.5rem;
+    background-color: $accentBlue;
+    color: $white;
+    border-radius: 8px;
+        }
+}
+
 /*
-Fix Reserve Now Button--might just have to do one button on top of page
-Update 2 Door Jeep Pic and Resource to Open Air Version
-Maybe Add in CC or extra info on json file and Rentals page
+Change Color of text when active in nav to fix contrast
+Fix Reserve Now Button--might just have to do one button on top of page 
+Center tables/content in vehicle cards
+Change hover effects on buttons
+Email Bro Blazzard to see if there is a way to embed the map without making my page huge
 */

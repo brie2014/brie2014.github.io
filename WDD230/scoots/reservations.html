@@ -33,12 +33,87 @@
     </nav>
     <main>
         <h2>Reserve Your Ride</h2>
+        <div class="container">
+            <form method="get" action="confirmation.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label class="top">First Name*<input type="text" name="firstName" required
+                            pattern="[A-Za-z ]{,}"></label>
+                    <label class="top">Last Name*<input type="text" name="lastName" required
+                                pattern="[A-Za-z ]{,}"></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@website.com" required></label>
+                    <label class="top">Phone Number*<input type="tel" name="phone" required maxlength="10"
+                            placeholder="2085551234" pattern="[0-9]{10}"></label>
+                    <label class="top">Home State or Country*<input type="text" name="fullName" required
+                            pattern="[A-Za-z ]{,}"></label>
+                    <label class="top">Cruise Line
+                        <input list="cruiseLines" name="cruiseLine">
+                        <datalist id="cruiseLines">
+                            <option value="Carnival"></option>
+                            <option value="Norwegian"></option>
+                            <option value="Princess"></option>
+                            <option value="Royal Caribbean"></option>
+                            <option value="Virgin Voyages"></option>
+                        </datalist>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <label class="top">Rental Start Date* <input type="date" name="startDate" required></label>
+                    <label class="top">Length of Rental (Days)*<input type="number" name="days" step="0.5" required></label>
+                    <label class="top">Vehicle Type*
+                        <select name="vehicle" required>
+                            <option disabled selected value="">Choose One</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="pcx50">Honda PCX150 Scooter</option>
+                            <option value="pioneer">Honda Pioneer ATV</option>
+                            <option value="jeep2">Jeep Wrangler - 2 Door</option>
+                            <option value="jeep4">Jeep Wrangler - 4 Door</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>Will you be needing the vehicle dropped off?
+                        <label class="sbs"><input type="radio" name="dropoff" value="yes" class="padding"> Yes</label>
+                        <label class="sbs"><input type="radio" name="dropoff" value="no" class="padding"> No</label>
+                        <label class="top">Please include any additional information or comments<textarea
+                                name="extraInfo" rows="5" placeholder="Special accomodations, dropoff location, etc."></textarea></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>User Agreement</legend>
+                    <div>
+                        <ul>
+                            <li>A $50 security deposit is required to confirm reservations.</li>
+                            <li>A valid drivers license is required in hand at time of rental.</li>
+                            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                            <li>Fuel charge not included.</li>
+                            <li>Unlimited mileage.</li>
+                            <li>Liability insurance is free of charge.</li>
+                            <li>Reservations rate requires 24 hour prior notification.</li>
+                            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                            <li>Rentals may be returned to either location.</li>
+                        </ul>
+                        <div class="sbs">
+                            <p>I have read the above conditions and agree to the rental terms.</p>
+                        <label class=""><input type="radio" name="dangerLevel" value="yes" required> Yes</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Make My Reservation" class="submitBtn">
+            </form>
+            
+        </div>
         <div class="map-contact container">
-            <section class="map">
+            <div class="map">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
                     height="400"></iframe>
-            </section>
-            <section class="contact-info">
+            </div>
+            <div class="contact-info">
                 <h3>Contact Us</h3>
                 <a class="map-link"
                     href="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax">View on Map</a>
@@ -61,7 +136,120 @@
                             alt="Instagram Icon"></a>
                     <a href="https://www.youtube.com/"><img src="images/social/youtube.png" alt="YouTube Icon"></a>
                 </div>
-            </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Scoots | <a href="resources.html">Attributions</a> | Brienna Sambrano</p>
+        <span id="dateandtime"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/allscoots.js"></script>
+    <script src="js/rentals.js"></script>
+
+
+</body>
+
+</html>"></label>
+                    <label class="top">Last Name*<input type="text" name="lastName" required
+                                pattern="[A-Za-z ]"></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@website.com" required></label>
+                    <label class="top">Phone Number*<input type="tel" name="phone" required maxlength="10"
+                            placeholder="2085551234" pattern="[0-9]{10}"></label>
+                    <label class="top">Home State or Country*<input type="text" name="fullName" required
+                            pattern="[A-Za-z ]"></label>
+                    <label class="top">Cruise Line
+                        <input list="cruiseLines" name="cruiseLine">
+                        <datalist id="cruiseLines">
+                            <option value="Carnival"></option>
+                            <option value="Norwegian"></option>
+                            <option value="Princess"></option>
+                            <option value="Royal Caribbean"></option>
+                            <option value="Virgin Voyages"></option>
+                        </datalist>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <label class="top">Start Date* <input type="date" name="startDate" required></label>
+                    <label class="top">End Date* <input type="date" name="endDate" required></label>
+                    <label class="top">Vehicle Type*
+                        <select name="vehicle" required>
+                            <option disabled selected value="">Choose One</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="pcx50">Honda PCX150 Scooter</option>
+                            <option value="pioneer">Honda Pioneer ATV</option>
+                            <option value="jeep2">Jeep Wrangler - 2 Door</option>
+                            <option value="jeep4">Jeep Wrangler - 4 Door</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>Will you be needing the vehicle dropped off?
+                        <label class="sbs"><input type="radio" name="dropoff" value="yes"> Yes</label>
+                        <label class="sbs"><input type="radio" name="dropoff" value="no"> No</label>
+                        <label class="top">Please include any additional information or comments <textarea
+                                name="extraInfo" rows="5"></textarea></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>User Agreement</legend>
+                    <div>
+                        <ul>
+                            <li>A $50 security deposit is required to confirm reservations.</li>
+                            <li>A valid drivers license is required in hand at time of rental.</li>
+                            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                            <li>Fuel charge not included.</li>
+                            <li>Unlimited mileage.</li>
+                            <li>Liability insurance is free of charge.</li>
+                            <li>Reservations rate requires 24 hour prior notification.</li>
+                            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                            <li>Rentals may be returned to either location.</li>
+                        </ul>
+                        <div class="sbs">
+                            <p>I have read the above conditions and agree to the rental terms.</p>
+                        <label class=""><input type="radio" name="dangerLevel" value="yes" required> Yes</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Make My Reservation" class="submitBtn">
+            </form>
+            
+        </div>
+        <div class="map-contact container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
+                    height="400"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <a class="map-link"
+                    href="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax">View on Map</a>
+                <p><b>
+                        &#x260F; 123-444-1234<br>
+                    </b></p>
+                <p><b>
+                        &#x2709; contact@scoots.com</b></p>
+                <p><b>Location #1</b>
+                    <br>Av. Rafael E. Melgar, Centro,
+                    <br>77600 San Miguel de Cozumel, Q.R., Mexico
+                    <br>
+                    <br><b>Location #2</b>
+                    <br>Carretera Chankanaab km 4.5, Carretera Costera Sur,
+                    <br>77600 San Miguel de Cozumel, Q.R., Mexico
+                </p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/"><img src="images/social/facebook.png" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com/"><img src="images/social/instagram.png"
+                            alt="Instagram Icon"></a>
+                    <a href="https://www.youtube.com/"><img src="images/social/youtube.png" alt="YouTube Icon"></a>
+                </div>
+            </div>
         </div>
 
     </main>
