@@ -17,8 +17,8 @@ fetch(requestURL)
       vehicle.textContent = vehicles[i].type;
 
       let picture = document.createElement('img');
-      image.setAttribute('src', prophets[i].image);
-      image.setAttribute('alt', prophets[i].type); 
+      image.setAttribute('src', vehicles[i].image);
+      image.setAttribute('alt', vehicles[i].type); 
 
 
       let table = document.createElement('table');
