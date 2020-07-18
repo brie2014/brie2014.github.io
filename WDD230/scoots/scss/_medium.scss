@@ -18,10 +18,11 @@ nav ul {
 nav ul li:first-child {
     display: none;
 }
-
-.homepage {
+main {
     width: 720px;
     margin: 0 auto;
+}
+.index  {
     display: grid;
     grid-template-areas: 
             "head head"

@@ -39,6 +39,6 @@ fetch(apiforecastURL)
        
     });
 
-    //Rental Button
+    //Rental Vehicles Button
     document.getElementById("rental-btn").onclick = function () {location.href = "rentals.html";
     ;}

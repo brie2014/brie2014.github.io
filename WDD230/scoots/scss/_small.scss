@@ -247,6 +247,10 @@ table {
     h3 {
         text-align: center;
     }
+
+    img {
+        object-fit: contain;
+    }
      
     table td:first-child {
         background-color: $accentBlue;
@@ -256,6 +260,12 @@ table {
 
     table td:nth-child(2) {
         font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .reserveBtn {
+        padding: 1rem;
+        margin: 0.5rem 1rem;
     }
 }
 
@@ -299,3 +309,9 @@ footer, footer a {
     padding: 1rem 0;
     color: $white;
 }
+
+/*
+Fix Reserve Now Button--might just have to do one button on top of page
+Update 2 Door Jeep Pic and Resource to Open Air Version
+Maybe Add in CC or extra info on json file and Rentals page
+*/

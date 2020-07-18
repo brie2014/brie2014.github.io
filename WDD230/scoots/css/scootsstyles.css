@@ -579,12 +579,18 @@ table {
     justify-content: center; }
   .rental-cards h3 {
     text-align: center; }
+  .rental-cards img {
+    object-fit: contain; }
   .rental-cards table td:first-child {
     background-color: #275dad;
     color: #ffffff;
     width: 40%; }
   .rental-cards table td:nth-child(2) {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.5rem; }
+  .rental-cards .reserveBtn {
+    padding: 1rem;
+    margin: 0.5rem 1rem; }
 
 .contact-info {
   text-align: center; }
@@ -619,6 +625,11 @@ footer, footer a {
   padding: 1rem 0;
   color: #ffffff; }
 
+/*
+Fix Reserve Now Button--might just have to do one button on top of page
+Update 2 Door Jeep Pic and Resource to Open Air Version
+Maybe Add in CC or extra info on json file and Rentals page
+*/
 @media only screen and (min-width: 720px) {
   body {
     font-size: 15px; }
@@ -637,9 +648,11 @@ footer, footer a {
   nav ul li:first-child {
     display: none; }
 
-  .homepage {
+  main {
     width: 720px;
-    margin: 0 auto;
+    margin: 0 auto; }
+
+  .index {
     display: grid;
     grid-template-areas: "head head" "hero hero" "vehicle weather" "info info"; }
 
@@ -712,7 +725,7 @@ footer, footer a {
     display: block; }
 
   .map iframe {
-    width: 400px; }
+    width: 600px; }
 
   .rental-cards {
     grid-template-columns: 1fr 1fr 1fr; } }

@@ -1,4 +1,4 @@
-//Fetching and creating elements for prophet page
+//Fetching data and creating elements for each rental vehicle
 
 const requestURL = 'https://brie2014.github.io/WDD230/scoots/data/vehicles.json';
 
@@ -17,8 +17,8 @@ fetch(requestURL)
       vehicle.textContent = vehicles[i].type;
 
       let picture = document.createElement('img');
-      image.setAttribute('src', vehicles[i].image);
-      image.setAttribute('alt', vehicles[i].type); 
+      picture.setAttribute('src', vehicles[i].image);
+      picture.setAttribute('alt', vehicles[i].type); 
 
 
       let table = document.createElement('table');
@@ -44,10 +44,10 @@ fetch(requestURL)
       let wf = document.createElement('td'); 
 
       peoplelabel.textContent = 'Max People';
-      rhlabel.textContent = 'Half-Day (3hrs) with Reservation';
-      rflabel.textContent = 'Full-Day with Reservation';
-      whlabel.textContent = 'Half-Day (3hrs) Walk-in';
-      wflabel.textContent = 'Full-Day Walk-in';
+      rhlabel.textContent = 'Reserved Half-Day (3hrs)';
+      rflabel.textContent = 'Reserved Full-Day';
+      whlabel.textContent = 'Walk-in Half-Day (3hrs)';
+      wflabel.textContent = 'Walk-in Full-Day';
       vehicle.textContent = vehicles[i].type;
       people.textContent = vehicles[i].persons;
       rh.textContent = vehicles[i].reshalf;
@@ -72,87 +72,23 @@ fetch(requestURL)
       table.appendChild(whrow);
       table.appendChild(wfrow);
 
+      let button = document.createElement('button');
+      button.textContent = 'Reserve Now!';
+      button.classList.add('reserveBtn');
+
       card.appendChild(vehicle);
       card.appendChild(picture);
+      card.appendChild(button);
       card.appendChild(table);
       card.setAttribute('class', 'container');
 
       document.querySelector('div.rental-cards').appendChild(card);
-      
-
-
     }
   });
 
-  /*      image.setAttribute('src', prophets[i].imageurl);
-      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order); 
-      
-      let row1 = document.createElement('tr');
-      let peoplelabel = document.createElement('td'); 
-      let rhlabel = document.createElement('td'); 
-      let rflabel = document.createElement('td'); 
-      let whlabel = document.createElement('td'); 
-      let wflabel = document.createElement('td'); 
-
-      peoplelabel.textContent = 'Max People';
-      rhlabel.textContent = 'Half-Day (3hrs) with Reservation';
-      rflabel.textContent = 'Full-Day with Reservation';
-      whlabel.textContent = 'Half-Day (3hrs) Walk-in';
-      wflabel.textContent = 'Full-Day Walk-in';
-
-
-      let row2 = document.createElement('tr'); 
-      let people = document.createElement('td'); 
-      let rh = document.createElement('td'); 
-      let rf = document.createElement('td'); 
-      let wh = document.createElement('td'); 
-      let wf = document.createElement('td'); 
-
-      people.textContent = vehicles[i].persons;
-      rh.textContent = vehicles[i].reshalf;
-      rf.textContent = vehicles[i].resfull;
-      wh.textContent = vehicles[i].walkhalf;
-      wf.textContent = vehicles[i].walkfull;
-
-      row2.appendChild(vehicle);
-      row2.appendChild(people);
-      row2.appendChild(rh);
-      row2.appendChild(rf);
-      row2.appendChild(wh);
-      row2.appendChild(wf);
-
-      document.querySelector('table.rentals-table').appendChild(table);
-
-
-
-                  <table class="rentals-table">
-                    <tr id="vehicle">
-                        <td></td>
-                    </tr>
-                    <tr id="people">
-                        <td>Max People</td>
-                    </tr>
-                    <tr id="rh">
-                        <td>Half-Day (3hrs)</td>
-                    </tr>
-                    <tr id="rf">
-                        <td>Full-Day</td>
-                    </tr>
-                    <tr id="wh">
-                        <td>Half-Day (3hrs)</td>
-                    </tr>
-                    <tr id="wf">
-                        <td>Full-Day</td>
-                    </tr>
-            </table>
-
-
-
-
-
-                  
-      */
-
+  //Reservation Button
+  document.getElementsByClassName('reserveBtn').onclick = function () {location.href = "reservations.html";
+  ;}
 
       /* horizontal table
       let row1 = document.createElement('tr');
