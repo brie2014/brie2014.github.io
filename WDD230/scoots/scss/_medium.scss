@@ -19,7 +19,7 @@ nav ul li:first-child {
     display: none;
 }
 
-main {
+.homepage {
     width: 720px;
     margin: 0 auto;
     display: grid;
@@ -78,4 +78,8 @@ display: none;
 
 .social-media-icons {
     justify-content: flex-end;
+}
+
+.rental-cards {
+    grid-template-columns: 1fr 1fr;
 }

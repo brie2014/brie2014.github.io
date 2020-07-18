@@ -7,7 +7,7 @@
         "resfull": "$30",
         "walkhalf": "$25",
         "walkfull": "$35",
-        "image": "f"
+        "image": "rentals/metro.jpg"
         },
 
         {
@@ -17,7 +17,7 @@
             "resfull": "$40",
             "walkhalf": "$35",
             "walkfull": "$45",
-            "image": "f"
+            "image": "rentals/dio.jpg"
             },
         
         {
@@ -27,7 +27,7 @@
             "resfull": "$50",
             "walkhalf": "$45",
             "walkfull": "$55",
-            "image": "f"
+            "image": "rentals/pcx150.jpg"
             },
         
         {
@@ -37,7 +37,7 @@
             "resfull": "$70",
             "walkhalf": "$60",
             "walkfull": "$80",
-            "image": "f"
+            "image": "rentals/pioneer.jpg"
             },
 
         {
@@ -47,7 +47,7 @@
             "resfull": "$100",
             "walkhalf": "$85",
             "walkfull": "$125",
-            "image": "f"
+            "image": "rentals/jeep4door.jpg"
             },
 
         {
@@ -57,7 +57,7 @@
             "resfull": "$85",
             "walkhalf": "$70",
             "walkfull": "$90",
-            "image": "f"
+            "image": "rentals/jeep2door.jpg"
             }
     ]
 

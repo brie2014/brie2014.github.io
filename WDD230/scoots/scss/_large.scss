@@ -32,27 +32,17 @@ main {
         }//end section, img
     }//end .current-weather
 
-.five-day-table {
-    display: block;
-    border-collapse: collapse;
-    margin: 1em 1em;
-    padding: 0;
-}
-
-.five-day-table tr:first-child {
-    background-color: $accentBlue;
-    color: $white;
-}
-
-.five-day-table tr td {
-    border: 1px solid $black;
-    padding: 1em;
-    text-align: center;
-}
+    .five-day-table {
+        display: block;
+    }
 
 
 .map {
     iframe {
         width: 400px;
     }  
+}
+
+.rental-cards {
+    grid-template-columns: 1fr 1fr 1fr;
 }

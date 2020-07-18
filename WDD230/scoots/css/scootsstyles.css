@@ -393,6 +393,9 @@ body {
   font-size: 14px;
   background-color: #25CED1; }
 
+main {
+  margin: 0 auto; }
+
 img {
   max-width: 100%; }
 
@@ -553,6 +556,36 @@ button {
 .five-day-table {
   display: none; }
 
+table {
+  border-collapse: collapse;
+  margin: 1em 1em;
+  padding: 0; }
+  table thead {
+    background-color: #275dad;
+    color: #ffffff; }
+  table tr td, table th {
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center; }
+
+.rental-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: stretch; }
+  .rental-cards div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .rental-cards h3 {
+    text-align: center; }
+  .rental-cards table td:first-child {
+    background-color: #275dad;
+    color: #ffffff;
+    width: 40%; }
+  .rental-cards table td:nth-child(2) {
+    font-weight: bold; }
+
 .contact-info {
   text-align: center; }
 
@@ -604,7 +637,7 @@ footer, footer a {
   nav ul li:first-child {
     display: none; }
 
-  main {
+  .homepage {
     width: 720px;
     margin: 0 auto;
     display: grid;
@@ -644,7 +677,10 @@ footer, footer a {
     display: none; }
 
   .social-media-icons {
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  .rental-cards {
+    grid-template-columns: 1fr 1fr; } }
 /*end of media query */
 @media only screen and (min-width: 1000px) {
   body {
@@ -673,20 +709,11 @@ footer, footer a {
       text-align: center; }
 
   .five-day-table {
-    display: block;
-    border-collapse: collapse;
-    margin: 1em 1em;
-    padding: 0; }
-
-  .five-day-table tr:first-child {
-    background-color: #275dad;
-    color: #ffffff; }
-
-  .five-day-table tr td {
-    border: 1px solid black;
-    padding: 1em;
-    text-align: center; }
+    display: block; }
 
   .map iframe {
-    width: 400px; } }
+    width: 400px; }
+
+  .rental-cards {
+    grid-template-columns: 1fr 1fr 1fr; } }
 /*end of media query */
