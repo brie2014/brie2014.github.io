@@ -625,13 +625,26 @@ footer, footer a {
   padding: 1rem 0;
   color: #ffffff; }
 
+.columns {
+  display: block; }
+  .columns ul {
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    line-height: 1.5rem; }
+  .columns > div, .columns form {
+    margin: 1rem; }
+
+.rental-pics {
+  display: none; }
+
 form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%; }
   form fieldset {
-    display: flex;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1.75rem;
     color: #275dad;
     background-color: #ffffff;
     border: solid 2px #ff1654;
@@ -641,22 +654,39 @@ form {
       font-weight: bold; }
     form fieldset label {
       padding: 0.5rem; }
+    form fieldset input, form fieldset textarea, form fieldset select {
+      background-color: rgba(39, 93, 173, 0.3);
+      border: rgba(39, 93, 173, 0.5);
+      padding: 0.5rem;
+      border-radius: 8px; }
     form fieldset ul {
-      margin: 1rem; }
+      background-color: rgba(37, 206, 209, 0.3);
+      border-radius: 8px; }
     form fieldset .top {
       display: flex;
       flex-direction: column; }
     form fieldset .sbs {
-      display: flex;
-      padding: 1rem; }
-    form fieldset .sbs label {
-      display: flex;
-      align-items: center; }
+      display: flex; }
     form fieldset .padding {
       margin-right: 1rem; }
+    form fieldset .radio-question {
+      padding: 1rem; }
+    form fieldset .agreement {
+      font-style: italic;
+      background-color: rgba(37, 206, 209, 0.3);
+      padding: 0.5rem;
+      margin: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      color: #ff1654; }
+    form fieldset input:required, form fieldset select:required {
+      border-left: #ff1654 solid 6px; }
+    form fieldset input:required:valid, form fieldset select:required:valid {
+      border-left: none; }
   form .submitBtn {
+    width: 50%;
     padding: 1rem;
-    margin: 0.5rem 1rem;
+    margin: 0rem 2rem 2rem;
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
     background-color: #275dad;
@@ -664,11 +694,14 @@ form {
     border-radius: 8px; }
 
 /*
+Validate Validate Validate!
+Maybe use json file to populate rental-pics on reservation page
 Change Color of text when active in nav to fix contrast
 Fix Reserve Now Button--might just have to do one button on top of page 
 Center tables/content in vehicle cards
 Change hover effects on buttons
 Email Bro Blazzard to see if there is a way to embed the map without making my page huge
+and what is the request for deposit info supposed to be? Form or just paragraph?
 */
 @media only screen and (min-width: 720px) {
   body {
@@ -733,7 +766,34 @@ Email Bro Blazzard to see if there is a way to embed the map without making my p
     justify-content: flex-end; }
 
   .rental-cards {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+
+  .columns {
+    display: flex; }
+
+  .rental-pics {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    align-content: center;
+    border: solid 2px #275dad;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: space-around; }
+    .rental-pics h3 {
+      text-align: center;
+      padding: 1rem;
+      border-bottom: dashed 2px #275dad;
+      border: dashed 2px #275dad;
+      margin: 2rem; }
+    .rental-pics img {
+      width: 95%;
+      padding: 2.5%;
+      margin-bottom: 1rem; }
+    .rental-pics section {
+      display: flex;
+      flex-direction: column; } }
 /*end of media query */
 @media only screen and (min-width: 1000px) {
   body {
@@ -768,5 +828,8 @@ Email Bro Blazzard to see if there is a way to embed the map without making my p
     width: 600px; }
 
   .rental-cards {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .rental-pics img {
+    margin-bottom: 0; } }
 /*end of media query */

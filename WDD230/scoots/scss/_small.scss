@@ -310,14 +310,33 @@ footer, footer a {
     color: $white;
 }
 
+.columns {
+    display: block;
+    
+    ul {
+        margin: 1rem;
+        padding: 1rem 1rem 1rem 2rem;
+        line-height: 1.5rem;
+    }
+
+    > div, form{
+        margin: 1rem;
+    }
+}
+
+.rental-pics {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
 
     fieldset {
-        display: flex;
         padding: 1rem;
-        margin: 1rem;
+        margin: 1.75rem;
         color: $accentBlue;
         background-color: $white;
         border: solid 2px $accentRed;
@@ -330,10 +349,19 @@ form {
 
         label {
             padding: 0.5rem;
+            
+        }
+
+        input, textarea, select {
+            background-color: rgba($accentBlue, 0.3);
+            border: rgba($accentBlue, 0.5);
+            padding: 0.5rem;
+            border-radius: 8px;
         }
 
         ul {
-            margin: 1rem;
+            background-color: rgba($main, 0.3);
+            border-radius: 8px;
         }
 
         .top {
@@ -343,22 +371,40 @@ form {
 
         .sbs {
             display: flex;
-            padding: 1rem;
         }
 
-        .sbs label {
-            display: flex;
-            align-items: center;
-        }
 
         .padding {
             margin-right: 1rem;
         }
 
+        .radio-question {
+            padding: 1rem;
+        }
+
+        .agreement {
+            font-style: italic;
+            background-color: rgba($main, 0.3);
+            padding: 0.5rem;
+            margin: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            color: $accentRed;
+        }
+
+        input:required, select:required {
+            border-left: $accentRed solid 6px;
+        }
+
+        input:required:valid, select:required:valid{
+            border-left: none;
+        }
+
     }
     .submitBtn {
+        width: 50%;
         padding: 1rem;
-        margin: 0.5rem 1rem;
+        margin: 0rem 2rem 2rem;
     font-family: $paragraphFont;
     font-size: 1.5rem;
     background-color: $accentBlue;
@@ -368,9 +414,12 @@ form {
 }
 
 /*
+Validate Validate Validate!
+Maybe use json file to populate rental-pics on reservation page
 Change Color of text when active in nav to fix contrast
 Fix Reserve Now Button--might just have to do one button on top of page 
 Center tables/content in vehicle cards
 Change hover effects on buttons
 Email Bro Blazzard to see if there is a way to embed the map without making my page huge
+and what is the request for deposit info supposed to be? Form or just paragraph?
 */

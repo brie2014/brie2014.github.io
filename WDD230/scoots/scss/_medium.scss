@@ -84,3 +84,40 @@ display: none;
 .rental-cards {
     grid-template-columns: 1fr 1fr;
 }
+
+.columns {
+    display: flex;
+}
+
+.rental-pics {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    text-align: center;
+    align-content: center;
+    border: solid 2px $accentBlue;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: space-around;
+
+    h3 {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: dashed 2px $accentBlue;
+        border: dashed 2px $accentBlue;
+        margin: 2rem;
+    }
+
+    img {
+        width: 95%;
+        padding: 2.5%;
+        margin-bottom: 1rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
