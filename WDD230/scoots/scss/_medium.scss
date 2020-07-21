@@ -68,9 +68,15 @@ header img {
     text-align: left;
 }
 
-.map iframe {
+.map a img {
     display: block;
-    max-width: 100%;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+iframe {
+    display: block;
+    max-width: 400px;
 }
 
 .map-link {
@@ -78,7 +84,7 @@ display: none;
 } 
 
 .social-media-icons {
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .rental-cards {
@@ -89,25 +95,51 @@ display: none;
     display: flex;
 }
 
-.rental-pics {
+form fieldset {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+.question-list, .rental-pics  {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    
-    text-align: center;
     align-content: center;
-    border: solid 2px $accentBlue;
-    background-color: white;
-    border-radius: 8px;
     justify-content: space-around;
 
-    h3 {
+    
+}
+
+.question-list {
+    width: 40%;
+    img {
+        object-fit: contain;
+    }
+}
+
+.answers {
+    width: 60%;
+}
+
+.special {
         text-align: center;
         padding: 1rem;
         border-bottom: dashed 2px $accentBlue;
         border: dashed 2px $accentBlue;
         margin: 2rem;
-    }
+}
+
+.hidesmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rental-pics {
+    width: 30%;
+    text-align: center;
+    border: solid 2px $accentBlue;
+    background-color: white;
+    border-radius: 8px;
 
     img {
         width: 95%;
@@ -121,3 +153,16 @@ display: none;
     }
 
 }
+    form
+    {
+        width: 70%;
+    }
+     fieldset {
+        padding: 1rem;
+        margin: 1.75rem;}
+
+        .submitBtn {
+            width: 50%;
+            margin: 0rem 2rem 2rem;
+            font-size: 1.5rem;
+        }

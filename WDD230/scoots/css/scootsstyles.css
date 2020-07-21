@@ -408,7 +408,7 @@ img {
 h2, h3, h4, p, table {
   padding: 0 25px; }
 
-p, ul, table, a {
+p, li, table, a, td, tr {
   font-family: "Playfair Display", serif; }
 
 header {
@@ -486,6 +486,9 @@ h3 {
   font-family: "Cabin", sans-serif;
   font-size: 1.75rem;
   margin-bottom: 0.5rem; }
+
+h4 {
+  font-family: "Margarine", cursive; }
 
 .container {
   background-color: #ffffff;
@@ -611,7 +614,7 @@ table {
   align-items: center;
   padding: 0.5rem; }
 
-.map iframe {
+.map a img, iframe {
   display: none; }
 
 .map-link {
@@ -625,35 +628,40 @@ table {
 .social-media-icons img {
   flex: 1 1 100%;
   max-width: 30px;
-  margin-left: 1em; }
+  margin-right: 1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px; }
 
-footer, footer a {
+footer {
+  margin-top: 2rem;
   font-family: "Playfair Display", serif;
   background-color: #275dad;
   text-align: center;
   padding: 1rem 0;
   color: #ffffff; }
+  footer a, footer h3 {
+    color: #ffffff; }
+
+ul {
+  margin: 0rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 2rem;
+  line-height: 1.5rem; }
 
 .columns {
   display: block; }
-  .columns ul {
-    margin: 1rem;
-    padding: 1rem 1rem 1rem 2rem;
-    line-height: 1.5rem; }
   .columns > div, .columns form {
     margin: 1rem; }
 
-.rental-pics {
+.hidesmall {
   display: none; }
 
 form {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 70%; }
+  margin: 0 auto; }
   form fieldset {
     padding: 1rem;
-    margin: 1.75rem;
+    margin: 1rem;
     color: #275dad;
     background-color: #ffffff;
     border: solid 2px #ff1654;
@@ -693,24 +701,38 @@ form {
     form fieldset input:required:valid, form fieldset select:required:valid {
       border-left: none; }
   form .submitBtn {
-    width: 50%;
+    width: 60%;
     padding: 1rem;
-    margin: 0rem 2rem 2rem;
+    margin: 1rem;
     font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: #275dad;
     color: #ffffff;
     border-radius: 8px; }
 
+.answers {
+  margin-top: 2rem; }
+  .answers h4 {
+    color: #275dad;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.15rem;
+    margin: 2rem auto 0rem; }
+  .answers p {
+    margin: 0.5rem auto 2rem; }
+
 /*
 Validate Validate Validate!
 Maybe use json file to populate rental-pics on reservation page
-Change Color of text when active in nav to fix contrast
 Fix Reserve Now Button--might just have to do one button on top of page 
 Center tables/content in vehicle cards
 Change hover effects on buttons
-Email Bro Blazzard to see if there is a way to embed the map without making my page huge
-and what is the request for deposit info supposed to be? Form or just paragraph?
+Deposit Info on Confirmation Page
+Embedded Map Issue? 
+Update Layout of Home Page to make it less similar to other project
+*/
+/*Embedded Map Link 
+<iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
+                    height="400" title="Scoots Locations Google Maps"></iframe>
 */
 @media only screen and (min-width: 720px) {
   body {
@@ -764,15 +786,20 @@ and what is the request for deposit info supposed to be? Form or just paragraph?
   .contact-info {
     text-align: left; }
 
-  .map iframe {
+  .map a img {
     display: block;
-    max-width: 100%; }
+    margin-left: auto;
+    border-radius: 8px; }
+
+  iframe {
+    display: block;
+    max-width: 400px; }
 
   .map-link {
     display: none; }
 
   .social-media-icons {
-    justify-content: flex-end; }
+    justify-content: flex-start; }
 
   .rental-cards {
     grid-template-columns: 1fr 1fr; }
@@ -780,29 +807,61 @@ and what is the request for deposit info supposed to be? Form or just paragraph?
   .columns {
     display: flex; }
 
-  .rental-pics {
+  form fieldset {
+    padding: 1.5rem;
+    margin: 1.5rem; }
+
+  .question-list, .rental-pics {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: space-around; }
+
+  .question-list {
+    width: 40%; }
+    .question-list img {
+      object-fit: contain; }
+
+  .answers {
+    width: 60%; }
+
+  .special {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: dashed 2px #275dad;
+    border: dashed 2px #275dad;
+    margin: 2rem; }
+
+  .hidesmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .rental-pics {
     width: 30%;
     text-align: center;
-    align-content: center;
     border: solid 2px #275dad;
     background-color: white;
-    border-radius: 8px;
-    justify-content: space-around; }
-    .rental-pics h3 {
-      text-align: center;
-      padding: 1rem;
-      border-bottom: dashed 2px #275dad;
-      border: dashed 2px #275dad;
-      margin: 2rem; }
+    border-radius: 8px; }
     .rental-pics img {
       width: 95%;
       padding: 2.5%;
       margin-bottom: 1rem; }
     .rental-pics section {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  form {
+    width: 70%; }
+
+  fieldset {
+    padding: 1rem;
+    margin: 1.75rem; }
+
+  .submitBtn {
+    width: 50%;
+    margin: 0rem 2rem 2rem;
+    font-size: 1.5rem; } }
 /*end of media query */
 @media only screen and (min-width: 1000px) {
   body {
@@ -826,15 +885,18 @@ and what is the request for deposit info supposed to be? Form or just paragraph?
     justify-content: center;
     justify-items: center; }
     .current-weather section, .current-weather img {
-      width: 25%;
+      width: 30%;
       border-radius: 8px;
       text-align: center; }
 
   .five-day-table {
     display: block; }
 
-  .map iframe {
+  .map a img {
     width: 600px; }
+
+  iframe {
+    max-width: 550px; }
 
   .rental-cards {
     grid-template-columns: 1fr 1fr 1fr; }

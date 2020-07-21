@@ -5,7 +5,7 @@
     src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
     font-display: swap;
   }
-  
+
 body {
     font-size: 14px;
     background-color: $main;
@@ -23,7 +23,7 @@ h2, h3, h4, p, table {
     padding: 0 25px;
 }
 
-p, ul, table, a {
+p, li, table, a, td, tr {
     font-family: $paragraphFont;
 }
 
@@ -131,6 +131,10 @@ h3 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
     
+}
+
+h4 {
+    font-family: $headerFont;
 }
 
 .container {
@@ -298,7 +302,7 @@ table {
     padding: 0.5rem;
 }
 
-.map iframe {
+.map a img, iframe {
         display: none;
     }
 
@@ -311,37 +315,47 @@ table {
     display: flex;
     justify-content: center;
     padding: 25px;
+    
 }
 
 .social-media-icons img {
     flex: 1 1 100%;
     max-width: 30px;
-    margin-left: 1em;
+    margin-right: 1em;
+    background-color: $fadedWhite;
+    border-radius: 5px;
 }
 
-footer, footer a {
+footer {
+    margin-top: 2rem;
     font-family: $paragraphFont;
-    background-color: $accentBlue;
-    text-align: center;
-    padding: 1rem 0;
-    color: $white;
+        background-color: $accentBlue;
+        text-align: center;
+        padding: 1rem 0;
+        color: $white;
+        
+
+    a, h3{color: $white;
+        
+    }
+
+}
+
+ul {
+    margin: 0rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    line-height: 1.5rem;
 }
 
 .columns {
     display: block;
-    
-    ul {
-        margin: 1rem;
-        padding: 1rem 1rem 1rem 2rem;
-        line-height: 1.5rem;
-    }
 
     > div, form{
         margin: 1rem;
     }
 }
 
-.rental-pics {
+.hidesmall {
     display: none;
 }
 
@@ -349,11 +363,11 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 70%;
+    
 
     fieldset {
         padding: 1rem;
-        margin: 1.75rem;
+        margin: 1rem;
         color: $accentBlue;
         background-color: $white;
         border: solid 2px $accentRed;
@@ -419,24 +433,41 @@ form {
 
     }
     .submitBtn {
-        width: 50%;
+        width: 60%;
         padding: 1rem;
-        margin: 0rem 2rem 2rem;
+        margin: 1rem;
     font-family: $paragraphFont;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: $accentBlue;
     color: $white;
     border-radius: 8px;
         }
 }
 
+.answers {
+    margin-top: 2rem;
+    h4 {
+    color: $accentBlue;
+    font-family: $headingFont;
+    font-size: 1.15rem;
+    margin: 2rem auto 0rem;
+    }
+    p {margin: 0.5rem auto 2rem;
+    }
+}
+
 /*
 Validate Validate Validate!
 Maybe use json file to populate rental-pics on reservation page
-Change Color of text when active in nav to fix contrast
 Fix Reserve Now Button--might just have to do one button on top of page 
 Center tables/content in vehicle cards
 Change hover effects on buttons
-Email Bro Blazzard to see if there is a way to embed the map without making my page huge
-and what is the request for deposit info supposed to be? Form or just paragraph?
+Deposit Info on Confirmation Page
+Embedded Map Issue? 
+Update Layout of Home Page to make it less similar to other project
+*/
+
+/*Embedded Map Link 
+<iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
+                    height="400" title="Scoots Locations Google Maps"></iframe>
 */
