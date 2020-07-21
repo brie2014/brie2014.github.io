@@ -54,7 +54,6 @@ h1 {
 
 nav {
     background-color: $accentBlue;
-    font-family: $headingFont;
 
     ul {
     display: flex;
@@ -65,22 +64,32 @@ nav {
         li {
 
         a {
+            letter-spacing: 0.1rem;
+            font-family: $headingFont;
             text-align: center;
             font-size: 1.25em;
             display: block;
             padding: 1.25em;
             text-decoration: none;
-            color: $white;}
+            color: $white;
+            font-weight: 600;
+        }
         
         :hover {
         background-color: $fadedWhite;
-        color: $accentRed;}
+        color: $accentBlue;
+        }
         }//end li
     }//end ul
+
     .active {
-        color: $accentRed;
         background-color: $fadedWhite;
-        text-decoration: underline; 
+        
+        
+        a {
+            color: $accentBlue;
+            background-color: $white;
+        } 
     }
 }//end nav   
 
