@@ -402,14 +402,17 @@ body {
 main {
   margin: 0 auto; }
 
-img {
-  max-width: 100%; }
-
 h2, h3, h4, p, table {
-  padding: 0 25px; }
+  padding: 0 1rem; }
+
+h2, h3, h4 {
+  text-align: center; }
 
 p, li, table, a, td, tr {
   font-family: "Playfair Display", serif; }
+
+img {
+  object-fit: contain; }
 
 header {
   display: flex;
@@ -424,17 +427,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-
-h1 {
-  font-family: "Margarine", cursive;
-  color: #ffffff;
-  font-size: 4rem;
-  margin: 0; }
-
-.motto {
-  font-style: italic;
-  font-family: "Playfair Display", serif;
-  color: #ffffff; }
+  header h1 {
+    font-family: "Margarine", cursive;
+    color: #ffffff;
+    font-size: 4rem;
+    margin: 0; }
+  header .motto {
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    color: #ffffff; }
 
 nav {
   background-color: #275dad; }
@@ -470,7 +471,6 @@ nav {
   border: none; }
 
 h2 {
-  text-align: center;
   font-size: 2rem;
   font-weight: bolder;
   font-family: "Margarine", cursive;
@@ -532,16 +532,15 @@ h4 {
   text-align: center; }
   .vehicle-list ul {
     list-style: none;
-    line-height: 1.5rem;
     padding: 0;
     font-size: 1.1rem; }
   .vehicle-list h4 {
     font-size: 1.25rem; }
 
-.btn-container, .submitBtn {
+.btn-container {
   display: flex;
   justify-content: center; }
-  .btn-container button, .submitBtn button {
+  .btn-container button {
     height: 5rem;
     width: 80%;
     margin-bottom: 1rem; }
@@ -589,8 +588,6 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .rental-cards h3 {
-    text-align: center; }
   .rental-cards img {
     object-fit: contain; }
   .rental-cards table td:first-child {
@@ -600,9 +597,10 @@ table {
   .rental-cards table td:nth-child(2) {
     font-weight: bold;
     font-size: 1.5rem; }
-  .rental-cards .reserveBtn {
-    padding: 1rem;
-    margin: 0.5rem 1rem; }
+
+.reserveBtn {
+  padding: 1rem;
+  margin: 0.5rem 1rem; }
 
 .contact-info {
   text-align: center; }
@@ -614,11 +612,18 @@ table {
   align-items: center;
   padding: 0.5rem; }
 
-.map a img, iframe {
+.map a img {
   display: none; }
 
 .map-link {
   display: block; }
+
+.columns-large {
+  display: block;
+  margin: 0 auto; }
+  .columns-large > div, .columns-large form {
+    margin: 1rem;
+    width: 90%; }
 
 .social-media-icons {
   display: flex;
@@ -652,8 +657,22 @@ ul {
   .columns > div, .columns form {
     margin: 1rem; }
 
+iframe {
+  margin: 5%;
+  max-width: 90%; }
+
+.locations {
+  text-align: center; }
+
 .hidesmall {
   display: none; }
+
+.contact-form fieldset {
+  border: none;
+  padding: 0rem;
+  margin: 0rem; }
+  .contact-form fieldset legend {
+    display: none; }
 
 form {
   display: flex;
@@ -720,19 +739,70 @@ form {
   .answers p {
     margin: 0.5rem auto 2rem; }
 
+.todo {
+  border: 5px solid #275dad;
+  border-radius: 8px; }
+  .todo img {
+    width: 80%;
+    margin: 0 auto; }
+  .todo a {
+    text-decoration: none; }
+    .todo a :hover {
+      text-decoration: underline; }
+
+.todo:hover, button:hover {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4); }
+
+.tour-page {
+  display: grid;
+  grid-template-areas: "heading heading" "places places" "history history" "funfacts funfacts";
+  grid-template-columns: 60%; }
+  .tour-page > div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+  .tour-page h2 {
+    grid-area: heading; }
+  .tour-page .history {
+    grid-area: history; }
+  .tour-page .funfacts {
+    grid-area: funfacts; }
+  .tour-page .places {
+    grid-area: places; }
+
+.center, .todo {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.todo a {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.todo {
+  background-color: #ffffff; }
+
+.funfacts {
+  background-color: #ffffff;
+  border-radius: 8px; }
+  .funfacts ul {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .funfacts a {
+    margin: 1rem; }
+  .funfacts li {
+    margin-bottom: 1rem; }
+
 /*
 Validate Validate Validate!
-Maybe use json file to populate rental-pics on reservation page
 Fix Reserve Now Button--might just have to do one button on top of page 
-Center tables/content in vehicle cards
 Change hover effects on buttons
 Deposit Info on Confirmation Page
-Embedded Map Issue? 
 Update Layout of Home Page to make it less similar to other project
-*/
-/*Embedded Map Link 
-<iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
-                    height="400" title="Scoots Locations Google Maps"></iframe>
+get better playa punta pic and motor bike pic
 */
 @media only screen and (min-width: 720px) {
   body {
@@ -787,13 +857,10 @@ Update Layout of Home Page to make it less similar to other project
     text-align: left; }
 
   .map a img {
+    max-width: 90%;
     display: block;
     margin-left: auto;
     border-radius: 8px; }
-
-  iframe {
-    display: block;
-    max-width: 400px; }
 
   .map-link {
     display: none; }
@@ -802,7 +869,7 @@ Update Layout of Home Page to make it less similar to other project
     justify-content: flex-start; }
 
   .rental-cards {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 50% 50%; }
 
   .columns {
     display: flex; }
@@ -861,7 +928,13 @@ Update Layout of Home Page to make it less similar to other project
   .submitBtn {
     width: 50%;
     margin: 0rem 2rem 2rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .thingstodo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .thingstodo h3 {
+      display: block; } }
 /*end of media query */
 @media only screen and (min-width: 1000px) {
   body {
@@ -895,12 +968,26 @@ Update Layout of Home Page to make it less similar to other project
   .map a img {
     width: 600px; }
 
-  iframe {
-    max-width: 550px; }
+  .columns-large {
+    display: flex; }
 
-  .rental-cards {
-    grid-template-columns: 1fr 1fr 1fr; }
+  .contact-form {
+    width: 1fr; }
+
+  .locations {
+    width: 40%; }
+
+  iframe {
+    max-width: 90%;
+    margin: 0 5%; }
+
+  .rental-cards, .thingstodo {
+    grid-template-columns: 33% 33% 33%; }
 
   .rental-pics img {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .tour-page {
+    display: grid;
+    grid-template-areas: "heading heading" "places places" "history funfacts"; } }
 /*end of media query */

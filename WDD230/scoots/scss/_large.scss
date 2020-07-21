@@ -43,14 +43,39 @@ main {
     }  
 }
 
-iframe {
-    max-width: 550px;
+.columns-large {
+    display: flex;
 }
 
-.rental-cards {
-    grid-template-columns: 1fr 1fr 1fr;
+.contact-form {
+    width: 1fr;
+}
+
+.locations {
+    width: 40%;
+}
+
+iframe {
+    max-width: 90%;
+    margin: 0 5%;
+}
+
+.rental-cards, .thingstodo {
+    grid-template-columns: 33% 33% 33%;
 }
 
 .rental-pics img  {
     margin-bottom: 0;
+}
+
+.tour-page {
+    display: grid;
+    grid-template-areas: 
+    "heading heading" 
+    "places places"
+    "history funfacts"
+    
+    
+    ;
+
 }

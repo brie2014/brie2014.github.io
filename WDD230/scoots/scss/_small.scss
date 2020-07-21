@@ -15,16 +15,21 @@ main {
     margin: 0 auto;
 }
 
-img {
-    max-width: 100%;
-}
 
 h2, h3, h4, p, table {
-    padding: 0 25px;
+    padding: 0 1rem;
+}
+
+h2, h3, h4 {
+    text-align: center;
 }
 
 p, li, table, a, td, tr {
     font-family: $paragraphFont;
+}
+
+img {
+    object-fit: contain;
 }
 
 header {
@@ -44,21 +49,23 @@ header {
         flex-direction: column;
         justify-content: center;
     }
+
+    h1 {
+        font-family: $headerFont;
+        color: $white;
+        font-size: 4rem;
+        margin: 0;
+    }
+    
+    .motto {
+        font-style: italic;
+        font-family: $paragraphFont;
+        color: $white;
+    }
 }
 
 
-h1 {
-    font-family: $headerFont;
-    color: $white;
-    font-size: 4rem;
-    margin: 0;
-}
 
-.motto {
-    font-style: italic;
-    font-family: $paragraphFont;
-    color: $white;
-}
 
 nav {
     background-color: $accentBlue;
@@ -112,7 +119,6 @@ nav {
 
 
 h2 {
-    text-align: center;
     font-size: 2rem;
     font-weight: bolder;
     font-family: $headerFont;
@@ -122,7 +128,6 @@ h2 {
     border: solid 5px $accentRed;
     border-radius: 8px;
     grid-area: head;
-    
 }
 
 h3 {
@@ -188,7 +193,6 @@ h4 {
         
         ul {
         list-style: none;
-        line-height: 1.5rem; 
         padding: 0;
         font-size: 1.1rem;
        }
@@ -197,7 +201,7 @@ h4 {
             font-size: 1.25rem;}     
 }
 
-.btn-container, .submitBtn {
+.btn-container {
     display: flex;
     justify-content: center;
     
@@ -265,10 +269,6 @@ table {
 
     }
 
-    h3 {
-        text-align: center;
-    }
-
     img {
         object-fit: contain;
     }
@@ -284,12 +284,13 @@ table {
         font-size: 1.5rem;
     }
 
-    .reserveBtn {
-        padding: 1rem;
-        margin: 0.5rem 1rem;
-    }
+    
 }
 
+.reserveBtn {
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+}
 .contact-info {
     text-align: center;
 }
@@ -302,7 +303,7 @@ table {
     padding: 0.5rem;
 }
 
-.map a img, iframe {
+.map a img {
         display: none;
     }
 
@@ -310,6 +311,15 @@ table {
     display: block;
 } 
 
+.columns-large {
+    display: block;
+    margin: 0 auto;
+
+    >div, form {
+        margin: 1rem;
+        width: 90%;
+    }
+}
 
 .social-media-icons {
     display: flex;
@@ -355,8 +365,27 @@ ul {
     }
 }
 
+iframe {
+    margin: 5%;
+    max-width: 90%;
+}
+
+.locations {
+    text-align: center;
+}
+
 .hidesmall {
     display: none;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0rem;
+    margin: 0rem;
+    legend {
+        display: none;
+    }
+    
 }
 
 form {
@@ -364,7 +393,7 @@ form {
     flex-direction: column;
     margin: 0 auto;
     
-
+    
     fieldset {
         padding: 1rem;
         margin: 1rem;
@@ -432,7 +461,7 @@ form {
         }
 
     }
-    .submitBtn {
+    .submitBtn, {
         width: 60%;
         padding: 1rem;
         margin: 1rem;
@@ -456,18 +485,99 @@ form {
     }
 }
 
+.todo {
+    border: 5px solid $accentBlue;
+    border-radius: 8px;
+    
+    img {
+        width: 80%;
+        margin: 0 auto;}
+    a {
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;}
+        }
+
+}
+
+.todo:hover, button:hover {
+    box-shadow: 8px 8px 8px rgba($black, 0.4);
+}
+
+.tour-page {
+    display: grid;
+    grid-template-areas: 
+    "heading heading" 
+    "places places"
+    "history history"
+    "funfacts funfacts"
+    
+    ;
+
+    grid-template-columns: 60%;
+
+    >div {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h2 {
+        grid-area: heading;
+    }
+    .history {
+        grid-area: history;
+    }
+    .funfacts {
+        grid-area: funfacts;
+    }.places {
+        grid-area: places;
+    }
+}
+
+.center, .todo {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.todo a {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.todo {
+    background-color: $white;
+}
+
+.funfacts {
+    background-color: $white;
+    border-radius: 8px;
+ul {
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+a {
+    margin: 1rem;
+}
+li {
+    margin-bottom: 1rem;
+}
+}
+
+
+
+
+
+
 /*
 Validate Validate Validate!
-Maybe use json file to populate rental-pics on reservation page
 Fix Reserve Now Button--might just have to do one button on top of page 
-Center tables/content in vehicle cards
 Change hover effects on buttons
 Deposit Info on Confirmation Page
-Embedded Map Issue? 
 Update Layout of Home Page to make it less similar to other project
-*/
-
-/*Embedded Map Link 
-<iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
-                    height="400" title="Scoots Locations Google Maps"></iframe>
+get better playa punta pic and motor bike pic
 */

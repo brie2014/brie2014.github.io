@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots: Scooter and Vehicle Rentals</title>
+    <title>Scoots: Make a Reservation</title>
     <meta name="description"
-        content="Welcome to Scoots scooters and vehicle rentals! Let us transport you on your next adventure. Explore Cozumel the right way!">
+        content="Make a reservation to rent one of our scooters or vehicles to use while getting around Cozumel!">
     <link rel="stylesheet" href="css/scootsstyles.css">
     <link rel="icon" href="favicon.ico">
 
@@ -34,7 +34,7 @@
     <main>
         <h2>Reserve Your Ride</h2>
         <div class="columns">
-            <form class="container" method="get" action="confirmation.html">
+            <form class="container reservation" method="get" action="confirmation.html">
                 <fieldset>
                     <legend>Customer Information</legend>
                     <label class="top">First Name*<input type="text" name="firstName" required
@@ -71,6 +71,16 @@
                             <option value="pioneer">Honda Pioneer ATV</option>
                             <option value="jeep2">Jeep Wrangler - 2 Door</option>
                             <option value="jeep4">Jeep Wrangler - 4 Door</option>
+                        </select>
+                    </label>
+                    <label class="top">Deposit Payment Method*
+                        <select name="deposit" required>
+                            <option disabled selected value="">Choose One</option>
+                            <option value="cash">Cash</option>
+                            <option value="credit">Credit</option>
+                            <option value="debit">Debit</option>
+                            <option value="googlepay">Google Pay</option>
+                            <option value="paypal">PayPal</option>
                         </select>
                     </label>
                     <div class="radio-question">
@@ -112,30 +122,7 @@
 
             <div class="rental-pics hidesmall">
                 <h3 class="special">Unlimited Mileage and Liability Insurance Included!</h3>
-                <section>
-                    <h4>Honda Dio Scooter</h4>
-                <img src="images/rentals/dio.jpg" alt="Honda Dio Scooter">
-                </section>
-                <section>
-                    <h4>Honda Metro Scooter</h4>
-                <img src="images/rentals/metro.jpg" alt="Honda Metro Scooter">
-                </section>
-                <section>
-                    <h4>Honda PCX150 Scooter</h4>
-                <img src="images/rentals/pcx150.jpg" alt="Honda PCX150 Scooter">
-                </section>
-                <section>
-                    <h4>Honda Pioneer</h4>
-                <img src="images/rentals/pioneer.jpg" alt="Honda Pioneer">
-                </section>
-                <section>
-                    <h4>Jeep Wrangler 2-Door</h4>
-                <img src="images/rentals/jeep2door.jpg" alt="Jeep Wrangler 2-Door">
-                </section>
-                <section>
-                    <h4>Jeep Wrangler 4-Door</h4>
-                <img src="images/rentals/jeep4door.jpg" alt="Jeep Wrangler 4-Door">
-                </section>
+
                 
             </div>
         </div>
@@ -178,6 +165,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/allscoots.js"></script>
+    <script src="js/reserve.js"></script>
 
 
 </body>
