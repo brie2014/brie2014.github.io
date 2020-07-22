@@ -64,9 +64,6 @@ header {
     }
 }
 
-
-
-
 nav {
     background-color: $accentBlue;
 
@@ -155,12 +152,6 @@ h4 {
     position: relative;
     padding: 0;
     text-align: center;
-
-    img {
-        box-shadow: 8px 8px 8px gray;
-        border-radius: 8px;
-        max-width: 100%;
-    }
     
     .herotext {
         h3{
@@ -185,6 +176,12 @@ h4 {
                 }//end .welcome    
             }//end .herotext
     }//end .herodiv
+
+.herodiv img, .pictures img, .container {
+        box-shadow: 8px 8px 8px gray;
+        border-radius: 8px;
+        max-width: 100%;
+    }
  
 .vehicle-list {
     grid-area: vehicle;
@@ -582,12 +579,3 @@ li {
     margin: 2rem;
 }
 
-
-
-
-
-
-/*
-Validate Validate Validate!
-Update Layout of Home Page to make it less similar to other project
-*/

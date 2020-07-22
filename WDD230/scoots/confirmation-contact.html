@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots: Contact Us</title>
+    <title>Scoots: Reservation Confirmation</title>
     <meta name="description"
-        content="Contact information for Scoots Scoote and Vehicle Rentals in Cozumel! Get in touch with our team quickly.">
+        content="Confirmation for making a reservation with Scoots Scooter and Vehicle Rentals in Cozumel.">
     <link rel="stylesheet" href="css/scootsstyles.css">
     <link rel="icon" href="favicon.ico">
 
@@ -25,52 +25,32 @@
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li class="active"><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Contact Us</h2>
-        <div class="columns-large">
-            <div class="container contact-form">
-                <h3>Leave Us a Question or Comment!</h3>
-                <form  class="contact-form" method="get" action="confirmation-contact.html">
-                    <fieldset>
-                        <legend>Contact</legend>
-                        <label class="top">First Name*<input type="text" name="firstName" required
-                                pattern="[A-Za-z ]{,}"></label>
-                        <label class="top">Last Name*<input type="text" name="lastName" required
-                                    pattern="[A-Za-z ]{,}"></label>
-                        <label class="top">Email*<input type="email" name="email" placeholder="someone@website.com" required></label>
-                        <label class="top">Questions or comments<textarea
-                            name="extraInfo" rows="5" placeholder="Special accomodations, dropoff location, etc."></textarea></label>
-                    </fieldset>
-                    <div class="btn-container">
-                        <input type="submit" value="Send Message" class="submitBtn">
-                    </div>
-                </form>
+        <h2>Reservation Confirmed</h2>
+        <div class="columns">
+            <div class="container confirmation">
+                <h3>Thank you for contacting us!</h3>
+                <p>We will get back to you shortly. You can also call 123-444-1234, or email contact@scoots.com. We look
+                    forward to meeting your
+                    transportation needs!
+                </p>
             </div>
-
-            <div class="locations container">
-                <h3>Locations</h3>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1mrqDXiN9UzxZW8nllI2_eDJCu2oVtSax" width="600"
-                    height="400" title="Scoots two locations on Map">
-                </iframe>
-            <p><b>Location #1</b>
-                <br>Av. Rafael E. Melgar, Centro,
-                <br>77600 San Miguel de Cozumel, Q.R., Mexico
-                <br>
-                <br><b>Location #2</b>
-                <br>Carretera Chankanaab km 4.5, Carretera Costera Sur,
-                <br>77600 San Miguel de Cozumel, Q.R., Mexico
-            </p>
+            <div class="container nextsteps">
+                <h3>Next Steps</h3>
+                <ul>
+                    <li><a href="tours.html">Plan Your Visit</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="reservations.html">Make Another Reservation</a></li>
+                </ul>
             </div>
         </div>
-        
-
-        
 
     </main>
     <footer>
