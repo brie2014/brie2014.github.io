@@ -28,7 +28,13 @@ main {
             "head head"
             "hero hero"
             "vehicle weather"
-            "info info";
+            "info info"
+            "pic pic";
+}
+
+.pictures {
+    grid-area: pic;
+    
 }
 
 header img {
@@ -118,14 +124,6 @@ form fieldset {
     width: 60%;
 }
 
-.special {
-        text-align: center;
-        padding: 1rem;
-        border-bottom: dashed 2px $accentBlue;
-        border: dashed 2px $accentBlue;
-        margin: 2rem;
-}
-
 .hidesmall {
     display: flex;
     flex-direction: column;
@@ -172,4 +170,15 @@ form fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.confirmation {
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.nextsteps {
+    width: 40%;
+}
+
 

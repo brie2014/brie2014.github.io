@@ -44,7 +44,7 @@
                     <label class="top">Email*<input type="email" name="email" placeholder="someone@website.com" required></label>
                     <label class="top">Phone Number*<input type="tel" name="phone" required maxlength="10"
                             placeholder="2085551234" pattern="[0-9]{10}"></label>
-                    <label class="top">Home State or Country*<input type="text" name="fullName" required
+                    <label class="top">Home State or Country*<input type="text" name="home" required
                             pattern="[A-Za-z ]{,}"></label>
                     <label class="top">Cruise Line (optional)
                         <input list="cruiseLines" name="cruiseLine">
@@ -73,16 +73,6 @@
                             <option value="jeep4">Jeep Wrangler - 4 Door</option>
                         </select>
                     </label>
-                    <label class="top">Deposit Payment Method*
-                        <select name="deposit" required>
-                            <option disabled selected value="">Choose One</option>
-                            <option value="cash">Cash</option>
-                            <option value="credit">Credit</option>
-                            <option value="debit">Debit</option>
-                            <option value="googlepay">Google Pay</option>
-                            <option value="paypal">PayPal</option>
-                        </select>
-                    </label>
                     <div class="radio-question">
                          Where will you be picking up your rental?
                         <label class="sbs"><input type="radio" name="location" value="ferrydock" class="padding">Location 1 (near Playa del Carmen-Cozumel ferry dock)</label>
@@ -91,6 +81,26 @@
                     </div>
                     <label class="top">Please include any additional information or comments<textarea
                         name="extraInfo" rows="5" placeholder="Special accomodations, dropoff location, etc."></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label class="top">Payment Method*
+                        <select name="payment" required>
+                            <option disabled selected value="">Choose One</option>
+                            <option value="cash">Cash</option>
+                            <option value="credit">Credit</option>
+                            <option value="debit">Debit</option>
+                            <option value="googlepay">Google Pay</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </label>
+                    
+                    <label class="top">Billing Address*<input type="text" name="address" required
+                        pattern="[A-Za-z ]{,}"></label>
+                <label class="top">Zipcode*<input type="text" name="zip" required maxlength="10"
+                        placeholder="12345" pattern="[0-9]{10}"></label>
+                <label class="top">Country*<input type="text" name="country" required
+                            pattern="[A-Za-z ]{,}"></label>
                 </fieldset>
                 <fieldset>
                     <legend>User Agreement</legend>

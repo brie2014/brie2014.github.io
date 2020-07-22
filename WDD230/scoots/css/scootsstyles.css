@@ -579,6 +579,11 @@ table {
     padding: 1em;
     text-align: center; }
 
+.pictures {
+  display: flex; }
+  .pictures img {
+    width: 33%; }
+
 .rental-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -755,8 +760,8 @@ form {
 
 .tour-page {
   display: grid;
-  grid-template-areas: "heading heading" "places places" "history history" "funfacts funfacts";
-  grid-template-columns: 60%; }
+  grid-template-areas: "heading heading"  "places places" "history history" "funfacts funfacts";
+  grid-template-columns: 1fr 1fr; }
   .tour-page > div {
     margin: 1rem;
     display: flex;
@@ -796,11 +801,16 @@ form {
   .funfacts li {
     margin-bottom: 1rem; }
 
+.special {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: dashed 2px #275dad;
+  border: dashed 2px #275dad;
+  margin: 2rem; }
+
 /*
 Validate Validate Validate!
-Deposit Info on Confirmation Page
 Update Layout of Home Page to make it less similar to other project
-get better playa punta pic and motor bike pic
 */
 @media only screen and (min-width: 720px) {
   body {
@@ -826,7 +836,10 @@ get better playa punta pic and motor bike pic
 
   .index {
     display: grid;
-    grid-template-areas: "head head" "hero hero" "vehicle weather" "info info"; }
+    grid-template-areas: "head head" "hero hero" "vehicle weather" "info info" "pic pic"; }
+
+  .pictures {
+    grid-area: pic; }
 
   header img {
     width: 110px; }
@@ -893,13 +906,6 @@ get better playa punta pic and motor bike pic
   .answers {
     width: 60%; }
 
-  .special {
-    text-align: center;
-    padding: 1rem;
-    border-bottom: dashed 2px #275dad;
-    border: dashed 2px #275dad;
-    margin: 2rem; }
-
   .hidesmall {
     display: flex;
     flex-direction: column;
@@ -935,7 +941,15 @@ get better playa punta pic and motor bike pic
     display: grid;
     grid-template-columns: 1fr 1fr; }
     .thingstodo h3 {
-      display: block; } }
+      display: block; }
+
+  .confirmation {
+    width: 60%;
+    line-height: 1.5;
+    text-align: center; }
+
+  .nextsteps {
+    width: 40%; } }
 /*end of media query */
 @media only screen and (min-width: 1000px) {
   body {

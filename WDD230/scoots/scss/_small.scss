@@ -256,6 +256,14 @@ table {
     }
 }
 
+.pictures {
+    display: flex;
+    img {
+        width: 33%;
+    } 
+}
+    
+
 .rental-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -506,15 +514,13 @@ form {
 
 .tour-page {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "heading heading" 
     "places places"
     "history history"
-    "funfacts funfacts"
-    
-    ;
+    "funfacts funfacts";
 
-    grid-template-columns: 60%;
+    grid-template-columns: 1fr 1fr;
 
     >div {
         margin: 1rem;
@@ -568,6 +574,14 @@ li {
 }
 }
 
+.special {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: dashed 2px $accentBlue;
+    border: dashed 2px $accentBlue;
+    margin: 2rem;
+}
+
 
 
 
@@ -575,7 +589,5 @@ li {
 
 /*
 Validate Validate Validate!
-Deposit Info on Confirmation Page
 Update Layout of Home Page to make it less similar to other project
-get better playa punta pic and motor bike pic
 */
